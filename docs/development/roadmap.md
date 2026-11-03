@@ -4,12 +4,17 @@ The stages are provisional gates, not simultaneous feature promises. The benchma
 reports define the evidence base; implementation should advance only when the prior
 stage's data and validation contracts are usable.
 
-## First task: V0.1 contracts and fixtures
+## First task: V0.1 contracts and fixtures — implemented
 
 Before adding a pose dependency, define and test the immutable video/session metadata,
 timestamped frame record, long-form landmark observation, event label/estimate, and
 quality-status schemas. Select a small, redistributable-or-local fixture policy and a
 manual event-label format. This is the recommended next implementation task.
+
+Contract version `0.1.0` now implements these records with Pydantic, PyArrow/Parquet,
+validated JSON metadata, additive corrections, synthetic fixtures, and an executed
+example notebook. Media decoding and pose inference remain outside this completed
+contract slice.
 
 Acceptance criteria:
 

@@ -1,7 +1,7 @@
-"""Open Swing Analysis project scaffold.
+"""Open Swing Analysis data contracts and research package."""
 
-The measurement pipeline is intentionally not implemented yet.  The repository
-currently contains the evidence and contracts needed to begin V0.1 safely.
-"""
+from open_swing_analysis.contracts import SCHEMA_VERSION
 
-__version__ = "0.0.0"
+__version__ = "0.1.0a1"
+
+__all__ = ["SCHEMA_VERSION", "__version__"]

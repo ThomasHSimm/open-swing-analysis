@@ -1,7 +1,7 @@
 # Architecture overview
 
-Status: proposed architecture informed by the completed benchmark. No movement
-measurement pipeline is implemented yet.
+Status: the V0.1 data contracts and local storage boundary are implemented. Video
+ingestion, pose inference, event detection, and movement measurement remain proposed.
 
 ## Architectural principles
 
@@ -93,9 +93,10 @@ proxy into a measurement.
 
 ## Deferred decisions
 
-- The persistent storage engine and formal schemas will be selected during the V0.1
-  contract task; Parquet plus validated metadata JSON is the current benchmark-led
-  preference, not a committed implementation.
+- Contract version `0.1.0` adopts validated JSON metadata plus explicit-schema
+  Parquet frame/pose tables in a session/swing directory layout. See
+  [V0.1 data contracts](data-contracts.md). A database server remains unnecessary;
+  migration and larger-scale partitioning are deferred until evidence requires them.
 - Automatic club/ball tracking is deferred until V0.3 and requires labelled pixel
   error/precision tests.
 - OpenSim/3-D biomechanics is not part of V0.1. It requires calibration, reproducible
