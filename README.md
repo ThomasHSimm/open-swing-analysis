@@ -7,11 +7,11 @@ ordinary golf-swing video. Its central question is:
 > identify anomalous movements, and determine which variations are associated
 > with labelled shot outcomes?
 
-The repository is currently at the **V0.1 data-contracts implemented** stage. It
+The repository is currently at the **V0.1 video-ingestion implemented** stage. It
 preserves executed evaluations of eight existing golf and movement-analysis projects
-and now provides versioned local storage for synthetic/session/frame/observation data.
-It does not yet provide pose inference, swing measurement, coaching, anomaly
-detection, or outcome prediction.
+and now provides versioned local storage plus deterministic streaming decode and
+capture diagnostics. It does not yet provide pose inference, swing measurement,
+coaching, anomaly detection, or outcome prediction.
 
 ## Current contents
 
@@ -22,6 +22,8 @@ Implemented repository infrastructure:
 - strict Pydantic contracts and validated JSON metadata;
 - PyArrow/Parquet frame and long-form pose tables with immutable revision layers;
 - deterministic synthetic fixtures and an executed data-contract notebook;
+- PyAV streaming ingestion with original timestamp and rotation provenance;
+- brightness, contrast, blur-proxy and timestamp diagnostic outputs;
 - ten executed benchmark notebooks;
 - benchmark scripts, derived evidence, manifests, and licence notes;
 - architecture and staged-development documentation;
@@ -75,10 +77,11 @@ open-swing status
 pytest
 ```
 
-No computer-vision runtime dependency is installed yet because this first V0.1 slice
-contains contracts and storage only. The contract runtime depends only on Pydantic and
-PyArrow; Jupyter and Matplotlib are optional analysis dependencies. See the
-[data-contract reference](docs/architecture/data-contracts.md).
+No pose-inference dependency is installed yet. The runtime uses PyAV and NumPy for
+streaming decode/diagnostics plus Pydantic and PyArrow for contracts and storage;
+Jupyter and Matplotlib are optional analysis dependencies. See the
+[data-contract reference](docs/architecture/data-contracts.md) and
+[video-ingestion decision](docs/architecture/video-ingestion.md).
 The benchmark packages require separate environments; their exact commands are in
 the [benchmark reproduction guide](docs/research/benchmarks/golf-balance-benchmark-readme.md).
 

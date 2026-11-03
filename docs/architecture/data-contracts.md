@@ -149,7 +149,9 @@ event correction.
   optional model-relative depth value; calibrated world coordinates need a separate
   future contract.
 - The store requires strictly increasing timestamps within a swing. It preserves
-  irregular spacing but does not currently represent equal presentation timestamps.
+  irregular spacing but does not directly represent equal or missing presentation
+  timestamps. The [ingestion sidecar](video-ingestion.md) preserves raw nullable PTS
+  and explicitly marks any estimate used for the canonical `Frame.timestamp_s`.
 - Cross-process write locking, migrations, streaming dataset partitioning, and
   privacy/access control are not implemented.
 - Strike/outcome categories are non-empty strings until a labelled reliability study

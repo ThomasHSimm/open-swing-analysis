@@ -1,7 +1,8 @@
 # Architecture overview
 
-Status: the V0.1 data contracts and local storage boundary are implemented. Video
-ingestion, pose inference, event detection, and movement measurement remain proposed.
+Status: the V0.1 data contracts, deterministic video ingestion, and capture-quality
+diagnostics are implemented. Pose inference, event detection, and movement
+measurement remain proposed.
 
 ## Architectural principles
 
@@ -58,6 +59,10 @@ personal baseline -> variability/anomaly summaries -> OutcomeLabel association
 Records the immutable asset hash, source, subject/session/swing identifiers, FPS,
 resolution, timestamps, camera view, handedness, and decode failures. Frame numbers
 alone are insufficient for variable or inaccurate frame rates.
+
+The implemented [video-ingestion layer](video-ingestion.md) uses PyAV to preserve
+original PTS/time-base data, apply display rotation, stream frames, and store
+threshold-free capture diagnostics alongside the versioned contracts.
 
 ### Observation
 

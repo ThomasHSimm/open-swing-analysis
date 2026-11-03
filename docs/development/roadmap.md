@@ -29,11 +29,16 @@ Acceptance criteria:
 
 Priorities:
 
-1. deterministic video ingestion and capture-quality reporting;
+1. deterministic video ingestion and capture-quality reporting — implemented;
 2. persistent MediaPipe 33-landmark extraction on CPU;
 3. continuous raw storage and separate filtered trajectories;
 4. transparent event baselines plus manual event validation;
 5. annotated video and confidence/missingness diagnostics.
+
+The ingestion slice uses PyAV streaming decode, original PTS/time-base provenance,
+display rotation, hashing, validated frame/capture diagnostics, and synthetic CFR/VFR
+tests. The next planned task is persistent MediaPipe 33-landmark extraction through
+this interface.
 
 Validation gates:
 

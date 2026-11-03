@@ -26,8 +26,8 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     if args.command == "status":
         print(
-            "V0.1 data contracts are implemented; pose inference, event detection, "
-            "and swing analysis are not implemented."
+            "V0.1 data contracts and deterministic video ingestion are implemented; "
+            "pose inference, event detection, and swing analysis are not implemented."
         )
         return 0
     parser.print_help()
