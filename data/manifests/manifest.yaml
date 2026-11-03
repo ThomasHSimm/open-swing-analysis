@@ -1,0 +1,92 @@
+manifest_version: 1
+retrieval:
+  date: "2026-11-03"
+  method: "gdown 6.5.1 public-folder download"
+  folder_url: "https://drive.google.com/drive/folders/1TDUnGjP1wh1gZeN1EZdJOO4AeYuMLnkO"
+  result: "success: all 12 files exposed by the public folder were downloaded"
+
+files:
+  - filename: raw/golftracker_samples/00001.json
+    source_url: "https://drive.google.com/uc?id=1NyNyUv0PW62-H6iFRJ1--3HZIJu7lVmk"
+    source_project: golftracker
+    description: "Exported frame-level MediaPipe, labelled swing-pose, and club-head data; the only supplied JSON with the version field required by golftrainer 1.0.2."
+    download_date: "2026-11-03"
+    bytes: 694304
+    sha256: b2b23332ee527cc90bd0af6da08b208744e84e46b743b3fcf084c8bdf1b041f5
+  - filename: raw/golftracker_samples/00001.mov
+    source_url: "https://drive.google.com/uc?id=1Su8G1XX-iwCHDrN8CxAd_0RKvwJDuARf"
+    source_project: golftracker
+    description: "Down-the-line right-handed golf-swing video, 136 frames at 30 fps, 432x768."
+    download_date: "2026-11-03"
+    bytes: 1557075
+    sha256: 0cc61ebb11467e9bb4ae5e6bd2f916e8d0fb51a88a07e467954d255815213df3
+  - filename: raw/golftracker_samples/00001.pkl
+    source_url: "https://drive.google.com/uc?id=1gijKxLfJn__zA1_vuFBKko9lgslI_eqt"
+    source_project: golftracker
+    description: "GolfSwing pickle database corresponding to 00001.mov, including manual labels and linear-fit club-head points."
+    download_date: "2026-11-03"
+    bytes: 105196
+    sha256: 2490c90d4e5db862807976db6771732905187034575f07fc1d83d2fde7525dda
+  - filename: raw/golftracker_samples/00002.json
+    source_url: "https://drive.google.com/uc?id=1iBtSHKe7sKYl27DSKVcEbp2nk7jxGqEw"
+    source_project: golftracker
+    description: "Exported frame-level data corresponding to 00002.mov; lacks golftrainer's required version field."
+    download_date: "2026-11-03"
+    bytes: 757832
+    sha256: 1c5591c688435a5e70eb56116324747cba336c23b9662177b97ec805fa81c523
+  - filename: raw/golftracker_samples/00002.mov
+    source_url: "https://drive.google.com/uc?id=1vFUOvtVtNgpKY62r5cf7MZsRQZoZb2qP"
+    source_project: golftracker
+    description: "Down-the-line right-handed golf-swing video, 148 frames at 30 fps, 540x960."
+    download_date: "2026-11-03"
+    bytes: 2425620
+    sha256: dcab3386f847ff55effc94807ff36fd1b566e6ddb1f716e5f74388d712ca1d6e
+  - filename: raw/golftracker_samples/00002.pkl
+    source_url: "https://drive.google.com/uc?id=1HiEMEvA_wmsvpyI1aVBofdhqfxbSCcH3"
+    source_project: golftracker
+    description: "GolfSwing pickle database corresponding to 00002.mov."
+    download_date: "2026-11-03"
+    bytes: 115135
+    sha256: dc8ee24ffffb314a9e3464f59d91a48e6d6af12f300c6dd688080120b7783d27
+  - filename: raw/golftracker_samples/00003.json
+    source_url: "https://drive.google.com/uc?id=1ybWDfTstBS1aAOZg9ac5I3B6HfVYSV_0"
+    source_project: golftracker
+    description: "Exported frame-level data corresponding to 00003.mp4; lacks golftrainer's required version field."
+    download_date: "2026-11-03"
+    bytes: 401638
+    sha256: b1acff3e19ce511c00cabe66c719b51cb6844dc9e0313a6cad9f8204147e441a
+  - filename: raw/golftracker_samples/00003.mp4
+    source_url: "https://drive.google.com/uc?id=1FaJmS1_3QnMT1uBwHr0eGKdUfDLNAudD"
+    source_project: golftracker
+    description: "Down-the-line right-handed golf-swing video, 78 frames at 59 fps, 1920x1080."
+    download_date: "2026-11-03"
+    bytes: 3795401
+    sha256: ec74cb2eef2e1eee4965425a23dc4c8fcedffad3fe169e150d31f19a3c83dc7a
+  - filename: raw/golftracker_samples/00003.pkl
+    source_url: "https://drive.google.com/uc?id=1SsHPf1T0skXlP3nFYtjKcJ0Wo8JyR38b"
+    source_project: golftracker
+    description: "GolfSwing pickle database corresponding to 00003.mp4."
+    download_date: "2026-11-03"
+    bytes: 61088
+    sha256: f2b947a7af305375de187c58861d3a37aec642fafacc963b90ccf8a222dbf1e4
+  - filename: raw/golftracker_samples/00004.json
+    source_url: "https://drive.google.com/uc?id=1UKogP2SiLR8c4SgJ179FAwic5-dMoZS5"
+    source_project: golftracker
+    description: "Exported frame-level data corresponding to 00004.mp4; lacks golftrainer's required version field."
+    download_date: "2026-11-03"
+    bytes: 2558365
+    sha256: 08c5077753bfc640152dc2bc05a245c5c067abcd2e46e37b187b1e9aa166a6ce
+  - filename: raw/golftracker_samples/00004.mp4
+    source_url: "https://drive.google.com/uc?id=1EczloLTIVCKWFRDYjsizdl8YxU-UgdT_"
+    source_project: golftracker
+    description: "Down-the-line right-handed golf-swing video, 500 frames at 29 fps, 640x480."
+    download_date: "2026-11-03"
+    bytes: 2891028
+    sha256: f8d8406ff75cffbe27a8c5ee6b13a59275bcbf2a5d707e8dd5cd4a5bf45777cd
+  - filename: raw/golftracker_samples/00004.pkl
+    source_url: "https://drive.google.com/uc?id=1EhyrVd9JmzGJ-qaDhmGN8puWJmue6jnk"
+    source_project: golftracker
+    description: "GolfSwing pickle database corresponding to 00004.mp4."
+    download_date: "2026-11-03"
+    bytes: 388167
+    sha256: 34e5ed52b6616712b9ddf320dfb99cee8ede5911b8a72b7505a524aab4709e2e

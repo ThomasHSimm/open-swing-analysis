@@ -1,0 +1,17 @@
+{
+  "classification": "Level A: exact repository script ran end to end on its included video",
+  "input": "input/Reference_Swing_DTL.mp4",
+  "output": "outputs/heleena/Reference_Swing_DTL_out_landmarks.mp4",
+  "exit_code": 0,
+  "runtime_seconds": 44.72,
+  "maximum_resident_memory_mb": 750,
+  "frames": 465,
+  "fps": 30.0,
+  "duration_seconds": 15.5,
+  "width": 734,
+  "height": 1080,
+  "codec": "mpeg4",
+  "raw_trajectory_export": false,
+  "event_detection": false,
+  "fixed_ball_coordinate": [650, 927]
+}

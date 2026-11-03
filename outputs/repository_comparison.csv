@@ -1,0 +1,9 @@
+project,level,execution basis,pose,temporal logic,club/ball
+swing-analyzer 0.1.2,A,wheel ran,MediaPipe,wrist heuristic,none
+golftracker 2.0,B,capture/labels + adapter,MediaPipe,stored labels,manual + interpolation
+golftrainer 1.0.2,B,table adapter only,none,none,clubhead passthrough
+greggjuri/golf-swing-analyzer,B,video/events/club components,placeholder,whole-frame motion,Hough; unreliable
+Heleena golf-swing-analysis,A,included video ran,MediaPipe,none,none; fixed ball point
+Pose2Par,C,unreproducible checkout,claimed MMPose,wrist-Z heuristic,none
+GolfPosePro,B,extraction + phase cells,MediaPipe,wrist-Y heuristic,none
+Squat-AI,C,source + separate backend probe,YOLO pose,rep hysteresis,none

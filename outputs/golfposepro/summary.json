@@ -1,0 +1,94 @@
+{
+  "00001": {
+    "frames": 136,
+    "tracked_wrist_frames": 136,
+    "extraction_runtime_seconds": 2.8845358849939657,
+    "swing_start": 64,
+    "swing_end": 87,
+    "phase_ranges": {
+      "Address": [
+        0,
+        64
+      ],
+      "Backswing": [
+        64,
+        74
+      ],
+      "Top": [
+        74,
+        84
+      ],
+      "Downswing": [
+        84,
+        86
+      ],
+      "Impact": [
+        86,
+        86
+      ],
+      "Follow Through": [
+        86,
+        87
+      ]
+    },
+    "normalized_phase_midpoints": {
+      "Address": -1.391304347826087,
+      "Backswing": 0.21739130434782608,
+      "Top": 0.6521739130434783,
+      "Downswing": 0.9130434782608695,
+      "Impact": 0.9565217391304348,
+      "Follow Through": 0.9782608695652174
+    }
+  },
+  "00002": {
+    "frames": 148,
+    "tracked_wrist_frames": 117,
+    "extraction_runtime_seconds": 3.3737950600043405,
+    "swing_start": 72,
+    "swing_end": 90,
+    "phase_ranges": {
+      "Address": [
+        0,
+        72
+      ],
+      "Backswing": [
+        72,
+        76
+      ],
+      "Top": [
+        76,
+        86
+      ],
+      "Downswing": [
+        86,
+        89
+      ],
+      "Impact": [
+        89,
+        89
+      ],
+      "Follow Through": [
+        89,
+        90
+      ]
+    },
+    "normalized_phase_midpoints": {
+      "Address": -2.0,
+      "Backswing": 0.1111111111111111,
+      "Top": 0.5,
+      "Downswing": 0.8611111111111112,
+      "Impact": 0.9444444444444444,
+      "Follow Through": 0.9722222222222222
+    }
+  },
+  "environment": {
+    "python": "3.11.18",
+    "opencv": "5.0.0",
+    "mediapipe": "0.10.14",
+    "numpy": "2.4.6",
+    "source_cells": [
+      13,
+      18
+    ]
+  }
+}

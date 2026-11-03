@@ -1,0 +1,87 @@
+{
+  "golftrainer": {
+    "distribution": "golftrainer",
+    "version": "1.0.2",
+    "python_requires": null,
+    "requirements": [
+      "pandas",
+      "numpy",
+      "pytest >=3.7 ; extra == 'dev'",
+      "check-manifest ; extra == 'dev'",
+      "twine ; extra == 'dev'"
+    ],
+    "metadata_license": "UNKNOWN",
+    "import_name": "golftrainer",
+    "import_file": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftrainer/lib/python3.11/site-packages/golftrainer/__init__.py",
+    "package_files": [
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftrainer/lib/python3.11/site-packages/golftrainer/__init__.py",
+        "lines": 0,
+        "definitions": []
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftrainer/lib/python3.11/site-packages/golftrainer/__version__.py",
+        "lines": 1,
+        "definitions": []
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftrainer/lib/python3.11/site-packages/golftrainer/factory.py",
+        "lines": 27,
+        "definitions": [
+          {
+            "kind": "FunctionDef",
+            "name": "create_golf_data",
+            "line": 5
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "create_golf_data_s",
+            "line": 12
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftrainer/lib/python3.11/site-packages/golftrainer/golf_data.py",
+        "lines": 115,
+        "definitions": [
+          {
+            "kind": "ClassDef",
+            "name": "VideoSpec",
+            "line": 6
+          },
+          {
+            "kind": "ClassDef",
+            "name": "VideoInput",
+            "line": 15
+          },
+          {
+            "kind": "ClassDef",
+            "name": "PoseResult",
+            "line": 20
+          },
+          {
+            "kind": "ClassDef",
+            "name": "MpResult",
+            "line": 25
+          },
+          {
+            "kind": "ClassDef",
+            "name": "ClubHeadResult",
+            "line": 30
+          },
+          {
+            "kind": "ClassDef",
+            "name": "GolfData",
+            "line": 35
+          }
+        ]
+      }
+    ],
+    "console_scripts": [
+      {
+        "name": "golf_trainer",
+        "value": "scripts.golf_trainer:main"
+      }
+    ]
+  }
+}

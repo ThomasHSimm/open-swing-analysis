@@ -1,0 +1,32 @@
+{
+  "output": "/home/tsispace/Documents/GitHub/golf-balance/outputs/swing_analyzer/annotated_00001.mp4",
+  "fps": 30.0,
+  "phases": {
+    "address_frame": 0,
+    "backswing_start_frame": 46,
+    "top_of_backswing_frame": 80,
+    "impact_frame": 89,
+    "release_frame": 93,
+    "finish_frame": 135
+  },
+  "summary": {
+    "spine_angle_address": 33.84005613496724,
+    "spine_angle_impact": 33.04812486997523,
+    "spine_angle_delta": -0.7919312649920087,
+    "shoulder_turn": 6.139818012199214,
+    "hip_turn": null,
+    "head_sway": 0.03430718183517456,
+    "head_vertical": 0.045624494552612305,
+    "arm_collapse_top": 145.95313442884574,
+    "reverse_spine": 0.043125003576278687,
+    "chicken_wing": 25.1902496964826,
+    "overswing": -0.1458243876695633,
+    "feet_jump": -0.013775885105133057
+  },
+  "flags": [
+    "\u2705 **Spine angle at address**: 33.8 \u2014 within normal range",
+    "\u2014 **Shoulder / hip turn at top**: not measurable from this camera angle (rotation is toward/away from the lens, so the projected angle carries little of it) \u2014 filmed face-on to read",
+    "\u2705 **Head sway (address -> top)**: 0.0 \u2014 within normal range",
+    "\u2705 **Spine angle change (address\u2192impact)**: -0.8\u00b0 \u2014 well maintained"
+  ]
+}

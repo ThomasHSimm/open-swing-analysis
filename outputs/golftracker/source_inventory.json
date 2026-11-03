@@ -1,0 +1,592 @@
+{
+  "golftracker": {
+    "distribution": "golftracker",
+    "version": "2.0",
+    "python_requires": null,
+    "requirements": [
+      "opencv-contrib-python",
+      "protobuf ==3.20.0",
+      "mediapipe ==0.8.10",
+      "numpy",
+      "scikit-learn",
+      "pandas",
+      "pytest >=3.7 ; extra == 'dev'",
+      "check-manifest ; extra == 'dev'",
+      "twine ; extra == 'dev'"
+    ],
+    "metadata_license": "UNKNOWN",
+    "import_name": "golftracker",
+    "import_file": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/__init__.py",
+    "package_files": [
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/__init__.py",
+        "lines": 0,
+        "definitions": []
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/canny_edge_detector.py",
+        "lines": 34,
+        "definitions": [
+          {
+            "kind": "ClassDef",
+            "name": "CannyEdgeDetector",
+            "line": 9
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/canny_edge_params.py",
+        "lines": 29,
+        "definitions": [
+          {
+            "kind": "ClassDef",
+            "name": "CannyEdgeParams",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/club_head_detector.py",
+        "lines": 91,
+        "definitions": [
+          {
+            "kind": "ClassDef",
+            "name": "ClubHeadDetector",
+            "line": 8
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "find_consecutive_invalid_indices",
+            "line": 45
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "create_sublists_around_invalids",
+            "line": 66
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/club_head_params.py",
+        "lines": 25,
+        "definitions": [
+          {
+            "kind": "ClassDef",
+            "name": "ClubHeadParams",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/club_head_result.py",
+        "lines": 49,
+        "definitions": [
+          {
+            "kind": "ClassDef",
+            "name": "ClubHeadResult",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/double_pendlum.py",
+        "lines": 24,
+        "definitions": [
+          {
+            "kind": "FunctionDef",
+            "name": "draw",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/file_utils.py",
+        "lines": 74,
+        "definitions": [
+          {
+            "kind": "FunctionDef",
+            "name": "basename",
+            "line": 7
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "search_file",
+            "line": 21
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "write_to_csv",
+            "line": 36
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "read_from_csv",
+            "line": 54
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/geom.py",
+        "lines": 243,
+        "definitions": [
+          {
+            "kind": "FunctionDef",
+            "name": "split_pt",
+            "line": 7
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "to_pairs",
+            "line": 18
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "scale",
+            "line": 28
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "origin_to_center",
+            "line": 38
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "origin_to_lb",
+            "line": 54
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "scale_origin_to_lb",
+            "line": 70
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "gradient",
+            "line": 81
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "acute_angle_degrees",
+            "line": 90
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "length",
+            "line": 98
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "line_equation_y",
+            "line": 101
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "slope_of_line",
+            "line": 116
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "y_intercept_of_line",
+            "line": 126
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "shortest_dist_from_point_to_line",
+            "line": 138
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "filter_lines_far_from_point",
+            "line": 154
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "filter_lines_with_wrong_slope",
+            "line": 163
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "sort_lines_closest_to_point",
+            "line": 174
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "sort_lines_matching_slope",
+            "line": 198
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "compute_velocities",
+            "line": 220
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "split_line",
+            "line": 232
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/golf_swing.py",
+        "lines": 130,
+        "definitions": [
+          {
+            "kind": "ClassDef",
+            "name": "GolfSwing",
+            "line": 12
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/golf_swing_factory.py",
+        "lines": 59,
+        "definitions": [
+          {
+            "kind": "FunctionDef",
+            "name": "create_from_video",
+            "line": 17
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "create_from_image",
+            "line": 22
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "__create",
+            "line": 32
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "create_from_json",
+            "line": 52
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/golf_swing_repository.py",
+        "lines": 47,
+        "definitions": [
+          {
+            "kind": "FunctionDef",
+            "name": "serialize",
+            "line": 9
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "reconstitute",
+            "line": 16
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/gt_const.py",
+        "lines": 117,
+        "definitions": [
+          {
+            "kind": "ClassDef",
+            "name": "GolfPose",
+            "line": 43
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "abbrev_pose",
+            "line": 52
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "print_golf_poses",
+            "line": 64
+          },
+          {
+            "kind": "ClassDef",
+            "name": "Handedness",
+            "line": 68
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "mp_landmark_row_header",
+            "line": 73
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "num_mp_landmarks",
+            "line": 83
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "create_pb_normalized_landmarks",
+            "line": 87
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "get_mp_landmarks_flat_row",
+            "line": 99
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/hough_line_detector.py",
+        "lines": 41,
+        "definitions": [
+          {
+            "kind": "ClassDef",
+            "name": "HoughLineDetector",
+            "line": 10
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/hough_line_params.py",
+        "lines": 24,
+        "definitions": [
+          {
+            "kind": "ClassDef",
+            "name": "HoughLineParams",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/image_operations.py",
+        "lines": 42,
+        "definitions": [
+          {
+            "kind": "FunctionDef",
+            "name": "create_mask",
+            "line": 17
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "draw_lines",
+            "line": 29
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/image_utils.py",
+        "lines": 219,
+        "definitions": [
+          {
+            "kind": "FunctionDef",
+            "name": "put_msg",
+            "line": 19
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "create_blank_frames",
+            "line": 29
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "create_blank_frame",
+            "line": 46
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_clean_input_stack_images",
+            "line": 51
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "stack_images",
+            "line": 80
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "stack_2d_images",
+            "line": 96
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "create_roi",
+            "line": 146
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "create_right_triangle",
+            "line": 157
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "draw_triangle",
+            "line": 167
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "scale_norm_point",
+            "line": 173
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "norm_2_screen",
+            "line": 176
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "norm_screen_point",
+            "line": 197
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "screen_2_norm",
+            "line": 200
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/media_pipe_landmarks.py",
+        "lines": 69,
+        "definitions": [
+          {
+            "kind": "ClassDef",
+            "name": "MediaPipeLandmarks",
+            "line": 12
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/media_pipe_operation.py",
+        "lines": 69,
+        "definitions": [
+          {
+            "kind": "FunctionDef",
+            "name": "run",
+            "line": 11
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "draw",
+            "line": 40
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/path_model.py",
+        "lines": 32,
+        "definitions": [
+          {
+            "kind": "FunctionDef",
+            "name": "get_path",
+            "line": 8
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "moving_average",
+            "line": 13
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "cubic_spline_interpolation",
+            "line": 17
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/pose_model.py",
+        "lines": 44,
+        "definitions": [
+          {
+            "kind": "ClassDef",
+            "name": "PoseModel",
+            "line": 9
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/pose_result.py",
+        "lines": 62,
+        "definitions": [
+          {
+            "kind": "ClassDef",
+            "name": "PoseResult",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/golftracker/lib/python3.9/site-packages/golftracker/video_utils.py",
+        "lines": 78,
+        "definitions": [
+          {
+            "kind": "FunctionDef",
+            "name": "transform_frame",
+            "line": 9
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "split_video_to_frames",
+            "line": 25
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "join_frames_to_video",
+            "line": 58
+          }
+        ]
+      }
+    ],
+    "console_scripts": [
+      {
+        "name": "create_posemodel",
+        "value": "scripts.utils.create_posemodel:main"
+      },
+      {
+        "name": "create_swing_db",
+        "value": "scripts.create_swing_db:main"
+      },
+      {
+        "name": "create_test_db",
+        "value": "scripts.utils.create_test_db:main"
+      },
+      {
+        "name": "create_test_image",
+        "value": "scripts.utils.create_test_image:main"
+      },
+      {
+        "name": "display_golf_swing",
+        "value": "scripts.display_golf_swing:main"
+      },
+      {
+        "name": "dump_swing_db",
+        "value": "scripts.dump_swing_db:main"
+      },
+      {
+        "name": "label_club_head",
+        "value": "scripts.label_club_head:main"
+      },
+      {
+        "name": "label_golf_poses",
+        "value": "scripts.label_golf_poses:main"
+      },
+      {
+        "name": "load_swing_db",
+        "value": "scripts.load_swing_db:main"
+      },
+      {
+        "name": "plot_swing_points",
+        "value": "scripts.plot_swing_points:main"
+      },
+      {
+        "name": "predict_posemodel",
+        "value": "scripts.utils.predict_posemodel:main"
+      },
+      {
+        "name": "resize_in_video",
+        "value": "scripts.resize_in_video:main"
+      },
+      {
+        "name": "track_golf_club",
+        "value": "scripts.track_golf_club:main"
+      },
+      {
+        "name": "train_posemodel",
+        "value": "scripts.utils.train_posemodel:main"
+      },
+      {
+        "name": "tune_line_det",
+        "value": "scripts.tune_line_det"
+      }
+    ]
+  }
+}

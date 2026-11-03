@@ -1,0 +1,96 @@
+---
+title: "Outcome Measures"
+---
+
+::: {.callout-warning}
+Outcome measure selection is provisional pending literature review completion.
+Measures marked **[CONFIRM]** need validation from existing studies.
+:::
+
+## Primary Outcome: Centre of Pressure Timing
+
+**What**: The frame at which COP transitions from predominantly trail foot to
+predominantly lead foot, relative to top of backswing.
+
+**Why**: This is the specific mechanism the device is designed to train —
+earlier, more consistent trail-to-lead COP shift at transition. Literature
+consistently identifies this as distinguishing skilled from less skilled golfers.
+
+**How measured**:
+- Gold standard: Force plates (Swing Catalyst / Kistler) — 1000Hz, direct measurement
+- Feasible option: Pressure insoles (Moticon ~100Hz) — validated against force plates
+  for gross COP measures **[CONFIRM validation in golf context]**
+- Minimum viable: Face-on video — manual frame coding, indirect proxy
+
+**Key reference**: GRF systematic review (Sports Medicine 2026) for what
+constitutes a meaningful difference.
+
+---
+
+## Primary Outcome: COP Magnitude
+
+**What**: Peak force under trail foot during backswing; peak force under lead
+foot at and after impact; expressed as % body weight.
+
+**Why**: Literature (BodiTrak data, Hashimoto) shows skilled golfers produce
+>100% body weight under lead foot at transition. This is trainable.
+
+**How measured**: Same as COP timing above.
+
+---
+
+## Secondary Outcome: Ball Direction Consistency
+
+**What**: Standard deviation of launch direction across 10 shots per session.
+
+**Why**: If COP change is meaningful it should eventually manifest in ball
+outcome. Direction is more sensitive than distance for detecting swing path
+changes.
+
+**How measured**: Launch monitor (TrackMan, GC3, or Mevo) if accessible at
+the instructor's facility.
+
+**[TO RESOLVE]**: Does the instructor have access to a launch monitor?
+
+---
+
+## Secondary Outcome: Subjective Feel Rating
+
+**What**: Participant rates "how in control did that feel" 1-10 after each
+session block.
+
+**Why**: Proprioceptive interventions should produce changes in subjective
+body awareness before they appear in objective measures. Also captures
+compliance and engagement.
+
+**How measured**: Simple paper form per session.
+
+---
+
+## Natural Variability Baseline
+
+**Critical consideration**: Before interpreting any change, we need to know
+the natural swing-to-swing variability for each participant.
+
+The GRF systematic review (Sports Medicine 2026) specifically notes reliability
+of GRF data is "substantially less clear" than the measures themselves —
+what represents a true change vs natural bandwidth is unestablished.
+
+**Proposed**: Collect 10+ swings at T0 to establish within-participant
+variability before attributing any T1/T2 change to the intervention.
+
+---
+
+## Measures NOT included and why
+
+**Clubhead speed**: Too many confounders (effort level, fatigue). Not
+sensitive to weight transfer specifically.
+
+**Handicap / score**: Changes over weeks are too slow and too confounded
+by course conditions, weather, mental state.
+
+**X-factor**: Camera-angle dependent as discussed in literature review.
+Not reliable from single-camera setup.
+
+**3D kinematics**: Requires motion capture lab — out of scope for
+preliminary study.

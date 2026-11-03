@@ -1,0 +1,147 @@
+---
+title: "Experiment Design"
+---
+
+::: {.callout-warning}
+This is a working draft. Key decisions marked **[TO RESOLVE]** depend on
+literature review findings and consultation with the device inventor.
+:::
+
+## Purpose
+
+A preliminary feasibility study to determine whether training with the balance
+device produces measurable changes in golf swing weight
+transfer patterns sufficient to justify a formal trial.
+
+This is not a clinical trial. It is preliminary data collection by a golf
+instructor with participants drawn from their teaching practice.
+
+---
+
+## Research Question
+
+> Does a [X]-week training programme using the balance device produce
+> measurable changes in centre of pressure timing or magnitude during the
+> golf swing in amateur golfers?
+
+Secondary: Are any changes in COP pattern associated with changes in ball
+direction consistency?
+
+---
+
+## Design
+
+**Type**: Pre-post observational study (no control group at this stage)
+**Rationale**: Control group requires larger n and matched participants.
+Pre-post is appropriate for feasibility work where the primary question is
+"does anything change" before testing "is the device the cause."
+
+**[TO RESOLVE]**: Whether a small waitlist control group (n=3-4) is achievable
+within the instructor's teaching pool.
+
+---
+
+## Participants
+
+**Target n**: 8-12 golfers
+**Rationale**: Large enough to detect a meaningful group trend; small enough
+to be feasible for one instructor. Literature suggests n=10-15 for pilot
+proprioceptive intervention studies.
+
+**Inclusion criteria**:
+- Established golfer (plays regularly, not a beginner)
+- Right-handed **[TO RESOLVE: include left-handed separately?]**
+- No current lower limb injury
+- Able to commit to training period
+
+**Exclusion criteria**:
+- Current lower limb injury or surgery within 12 months
+- Neurological conditions affecting balance
+- Unable to wear the device safely
+
+**Recruitment**: Instructor's existing pupils — opportunistic sample,
+acknowledged limitation.
+
+---
+
+## Intervention
+
+**Device**: Balance device, one pair
+**Training period**: **[TO RESOLVE — 4 or 6 weeks?]** — literature suggests
+4-6 weeks for proprioceptive adaptations to appear
+**Frequency**: **[TO RESOLVE]** — suggest minimum 3 sessions/week
+**Duration per session**: 15-20 minutes device use
+**Activity during device use**: Slow practice swings without ball initially,
+progressing to full swings with ball
+
+**Standardisation needed**:
+- Consistent camera position at all sessions (mark floor position)
+- Same club used for all measurement sessions (7-iron suggested —
+  standard in literature)
+- Warm-up protocol standardised
+
+---
+
+## Measurement Points
+
+- **T0**: Baseline — before any device use
+- **T1**: Mid-point — after 2-3 weeks **[TO RESOLVE]**
+- **T2**: Post-intervention — immediately after training period ends
+- **T3**: Retention — 2-4 weeks after device use stops **[OPTIONAL — adds
+  significant burden]**
+
+---
+
+## Outcome Measures
+
+See [Outcome Measures](measures.qmd) for full rationale.
+
+**Primary**:
+- Centre of pressure timing (when does COP shift from trail to lead foot)
+- COP magnitude at key swing events
+
+**Secondary**:
+- Ball direction consistency (if launch monitor available)
+- Subjective feel rating (simple 1-10 scale per session)
+
+**Measurement tools**:
+**[TO RESOLVE]** — depends on what is accessible:
+
+| Option | Pros | Cons |
+|---|---|---|
+| Pressure insoles (Moticon/Pedar rental) | Direct COP measurement | Cost, calibration |
+| Force plate (if Loughborough involved) | Gold standard | Requires lab visit |
+| Video face-on + manual coding | Free, feasible now | Indirect, labour intensive |
+| Phone IMU | Free, portable | Accuracy unknown for this use |
+
+**Minimum viable option**: Face-on video with manual frame-by-frame coding of
+weight transfer timing. Not ideal but generates preliminary data.
+
+---
+
+## Ethics Considerations
+
+This is instructor-led data collection on willing pupils, not a formal clinical
+trial. However:
+
+- Participants should give informed consent to data collection and potential
+  publication of anonymised findings
+- Data should be stored securely (not just on personal devices)
+- Any adverse events (falls, discomfort) should be recorded
+- If approaching Loughborough, ethics approval will be required before they
+  can formally participate
+
+**[TO RESOLVE]**: Draft a simple participant information sheet and consent form
+before data collection begins.
+
+---
+
+## Limitations (pre-acknowledged)
+
+- No control group — cannot attribute change to device vs natural improvement
+  or regression to mean
+- Small n — insufficient power for definitive conclusions
+- Opportunistic sample — instructor's pupils, not representative
+- Measurement tools may be indirect — video coding not equivalent to force plate
+- Single instructor — cannot separate device effect from coaching effect
+- No blinding possible — participants know they are using the device

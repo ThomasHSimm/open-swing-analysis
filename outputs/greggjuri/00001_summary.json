@@ -1,0 +1,27 @@
+{
+  "python": "3.9.25",
+  "opencv": "4.11.0",
+  "numpy": "1.26.4",
+  "scipy": "1.13.1",
+  "sample": "data/golftracker_samples/00001.mov",
+  "frames": 136,
+  "fps": 30.0,
+  "event_positions": {
+    "P1": 20,
+    "P4": 40,
+    "P7": 88
+  },
+  "event_runtime_seconds": 0.18488574100047117,
+  "club_runtime_seconds": 0.9846412309998414,
+  "shaft_detected_frames": 136,
+  "club_head_detected_frames": 90,
+  "club_errors": {},
+  "manual_label_frames": 24,
+  "club_head_available_on_manual_labels": 11,
+  "median_club_head_error_px": 215.20597368825787,
+  "club_head_within_50px_rate": 0.041666666666666664,
+  "median_nearest_shaft_endpoint_error_px": 22.860987056042788,
+  "shaft_endpoint_within_50px_rate": 0.625,
+  "pose_probe": "NotImplementedError: MediaPipe integration pending",
+  "tracker_algorithm": "causal moving average plus last-value gap hold; no Kalman filter"
+}

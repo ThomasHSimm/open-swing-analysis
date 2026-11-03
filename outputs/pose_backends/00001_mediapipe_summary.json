@@ -1,0 +1,10 @@
+{
+  "backend": "MediaPipe Pose legacy solutions API",
+  "mediapipe": "0.10.14",
+  "opencv": "5.0.0",
+  "frames": 136,
+  "detected_frames": 136,
+  "landmarks_per_detection": 33,
+  "mean_latency_seconds": 0.0265763720663552,
+  "mean_visibility": 0.8229193789112497
+}

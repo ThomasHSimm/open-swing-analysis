@@ -1,0 +1,33 @@
+review_date: 2026-11-03
+clone_root: /tmp/golf-benchmark-repos
+repositories:
+  - project: greggjuri/golf-swing-analyzer
+    clone_url: https://github.com/greggjuri/golf-swing-analyzer.git
+    commit: 13669643f8ed8865df74f2fe1239b126f067120c
+    commit_date: 2025-12-07
+    local_directory: greggjuri-golf-swing-analyzer
+    licence: "No licence file; README badge/claim alone is not a grant"
+  - project: HeleenaRobert/golf-swing-analysis
+    clone_url: https://github.com/HeleenaRobert/golf-swing-analysis.git
+    commit: 0c551ae4d93cacd85a613b0b6d9d60aa2f333110
+    commit_date: 2025-08-16
+    local_directory: heleena-golf-swing-analysis
+    licence: MIT
+  - project: cavanaulton/Pose2Par
+    clone_url: https://github.com/cavanaulton/Pose2Par.git
+    commit: 6d02d76c196aa0e52a06609f95b556aea48f7ba8
+    commit_date: 2026-03-30
+    local_directory: pose2par
+    licence: "MIT for the top-level repository; nested dependency licence unresolved"
+  - project: ryanboscobanze/GolfPosePro
+    clone_url: https://github.com/ryanboscobanze/GolfPosePro.git
+    commit: 9139e5e479a166c5ffb93abfc550f57856d8eddd
+    commit_date: 2025-08-11
+    local_directory: golfposepro
+    licence: MIT
+  - project: cavanaulton/Squat-AI
+    clone_url: https://github.com/cavanaulton/Squat-AI.git
+    commit: e1f94988ba38dc979c27cb04cfbaa0ee1e481ed9
+    commit_date: 2025-05-23
+    local_directory: squat-ai
+    licence: "No licence file; README claim alone is not a grant"

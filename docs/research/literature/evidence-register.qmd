@@ -1,0 +1,120 @@
+---
+title: "Literature Evidence Register"
+---
+
+## Scope
+
+Four literature bodies are reviewed:
+
+1. **Proprioceptive training interventions** — do balance and foot-pressure interventions produce
+   lasting changes in movement patterns? What outcome measures are standard?
+2. **Golf weight transfer and GRF** — what is the baseline evidence on pressure
+   shift patterns and their measurement?
+3. **Foot pressure intervention in golf** — has anyone directly manipulated foot
+   pressure during the swing and measured the effect?
+4. **Golf training aid efficacy trials** — peer-reviewed before/after studies
+   on golf training interventions
+
+## Extraction Template
+
+Each paper is extracted using the following structure:
+
+```
+## [Author(s), Year] — Short title
+
+**Source**: Journal / Conference
+**DOI/URL**:
+**Study type**: RCT / Observational / Case study / Review / Meta-analysis
+**Population**: n, skill level, age, sex
+**Intervention**: What was done
+**Comparator**: Control condition
+**Duration**: Training period
+**Outcome measures**: What was measured and how
+**Key findings**: Main results
+**Relevance to trial design**: What this tells us about our protocol
+**Limitations noted by authors**:
+**Quality flag**: High / Medium / Low confidence
+```
+
+---
+
+## Area 1: Proprioceptive Training Interventions
+
+### Identified papers (relevance pre-check)
+
+| Paper | Relevance | Status |
+|---|---|---|
+| Eils & Rosenbaum (2001) — proprioceptive training ankle sprain | High — RCT with clear outcome measures | To extract |
+| Hupperets et al. (2009) — home proprioceptive training ankle sprain RCT (BMJ) | High — 35% reduction in recurrence, good design | To extract |
+| Zech et al. (2010) — proprioceptive training sport systematic review | High — outcome measure summary across sports | To extract |
+| Benis et al. (2024) — proprioceptive training sports performance systematic review (PMC11225257) | High — covers multiple sports, performance outcomes | To extract |
+| TOGU training golf swing 4 weeks (PMC11587031) | High — directly relevant, golf + balance training + before/after | **Priority extract** |
+| ACL proprioception RCT (Tandfonline 2025) | Medium — outcome measures useful but not golf | To extract |
+
+---
+
+## Area 2: Golf Weight Transfer and GRF
+
+### Identified papers (relevance pre-check)
+
+| Paper | Relevance | Status |
+|---|---|---|
+| Ground Reaction Force and COP systematic review (Sports Medicine 2026) | **Critical** — most recent systematic review on GRF/COP in golf | **Priority extract** |
+| Foot-ground interaction and clubhead speed (Frontiers 2026) | High — impulse-based energy transfer framework | To extract |
+| Foot insole pressure distribution professionals vs amateurs (MDPI 2022) | High — directly relevant measurement methodology | To extract |
+| Blenkinsop et al. (2018) — uphill/downhill slopes weight transfer (JAB) | Medium — COP shift data, good methodology reference | To extract |
+| Wallace & Graham (1990) — foot pressure golf drive case study | Medium — historical baseline, first WSCG | Background |
+| Richards — weight transfer patterns skilled vs unskilled | High — directly cited in multiple papers | To find and extract |
+
+---
+
+## Area 3: Foot Pressure Intervention in Golf
+
+### Identified papers (relevance pre-check)
+
+| Paper | Relevance | Status |
+|---|---|---|
+| Alterations in foot CoP weight distribution lower body kinematics (Roehampton/J Sports Sci 2019) | **Critical** — closest existing study to our intervention | **Priority extract** |
+| Ground-X-Factor proprioceptive foot intervention preprint (Preprints.org 2024) | **Critical** — immediate effect of foot proprioceptive intervention on GRF and club speed, n=25 | **Priority extract** |
+| Latella et al. (2008) WSCG — golf specific proprioception program | High — before/after design, swing mechanics outcomes | To extract |
+
+---
+
+## Area 4: Golf Training Aid Efficacy Trials
+
+### Identified papers (relevance pre-check)
+
+| Paper | Relevance | Status |
+|---|---|---|
+| Cochran & Farrally (eds) Science and Golf series — training aid chapters | Medium — background, not RCTs | Background |
+| Evidence for biomechanics and motor learning improving golf performance (ResearchGate 2012) | High — review of what actually works | To extract |
+| SuperSpeed Golf GRF study (Standifird, Utah Valley) — before/after vertical force | High — example of training aid RCT design | To find full paper |
+
+### Preliminary finding
+
+No peer-reviewed RCT of a foot-pressure or balance-training intervention specifically
+for golf weight transfer was identified. This represents the primary gap this project
+addresses.
+
+---
+
+## Full Extractions
+
+*To be added as papers are processed*
+
+---
+
+## Key Themes Emerging
+
+*To be populated after extractions*
+
+---
+
+## TODOs
+
+- [ ] Extract TOGU golf study (PMC11587031) — most directly comparable design
+- [ ] Extract GRF systematic review (Sports Medicine 2026) — outcome measure reference
+- [ ] Extract Roehampton foot CoP intervention study — closest methodological precedent
+- [ ] Extract Ground-X-Factor preprint — most recent foot proprioception intervention
+- [ ] Find Richards weight transfer patterns paper full text
+- [ ] Find Standifird SuperSpeed GRF study full text

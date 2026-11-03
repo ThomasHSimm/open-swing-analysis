@@ -1,67 +1,128 @@
-# Golf Balance Research
+# Open Swing Analysis
 
-Preliminary research and experiment design for a study of balance-focused 
-training applied to golf swing weight transfer.
+Open Swing Analysis is a research-led Python project for measuring movement in
+ordinary golf-swing video. Its central question is:
 
-## Background
+> Can ordinary video quantify an individual golfer's swing variability,
+> identify anomalous movements, and determine which variations are associated
+> with labelled shot outcomes?
 
-This project explores whether targeted balance and foot-pressure training can 
-produce measurable changes in centre of pressure timing, weight transfer, and 
-ball-striking outcomes during the golf swing.
+The repository is currently at the **benchmark-complete, implementation-not-yet-started**
+stage. It preserves executed evaluations of eight existing golf and movement-analysis
+projects and uses those results to define a cautious architecture. It does not yet
+provide swing measurement, coaching, anomaly detection, or outcome prediction.
 
-This project constitutes preliminary feasibility work before any formal data 
-collection.
+## Current contents
 
-## Repo Structure
+Implemented repository infrastructure:
 
+- an installable `open_swing_analysis` project scaffold;
+- the `open-swing` status/version command;
+- ten executed benchmark notebooks;
+- benchmark scripts, derived evidence, manifests, and licence notes;
+- architecture and staged-development documentation;
+- research and study-design material migrated from `golf-balance`.
+
+Proposed capabilities—not yet implemented—are video ingestion, 33-landmark pose
+extraction, validated swing events, continuous trajectory storage, personal
+consistency analysis, anomaly detection, outcome association, and club tracking.
+
+## Evidence from the benchmark
+
+The benchmark found that MediaPipe is the best observed V0.1 pose starting point,
+but no reviewed event detector or automatic golf-club tracker is production-ready.
+The most useful existing ideas are full frame-aligned landmark storage, manual
+club/event provenance, transparent wrist-trajectory baselines, confidence gating,
+camera-view constraints, and state-machine hysteresis.
+
+Read the full [package review](docs/research/benchmarks/package-review.md), the
+[reuse map](docs/research/benchmarks/reuse-map.md), or the executed
+[combined comparison notebook](notebooks/benchmarks/09_repository_comparison.ipynb).
+
+## Architecture
+
+The proposed data flow is:
+
+```text
+video/session provenance
+        -> timestamped frames and capture QC
+        -> raw pose observations with confidence
+        -> manual/heuristic events with provenance
+        -> separately filtered trajectories
+        -> view-appropriate 2-D features
+        -> phase-aligned personal baselines
+        -> variability/anomaly summaries
+        -> manually labelled shot outcomes
 ```
-golf-balance-research/
-├── index.qmd                    # Site home
-├── _quarto.yml                  # Quarto config
-├── literature/
-│   ├── evidence-register.qmd   # Systematic literature register
-│   ├── extraction-prompt.md    # Reusable prompt for paper analysis
-│   └── extractions/            # One .md file per extracted paper
-├── experiment/                 # Local-only working files, ignored by git
-│   ├── design.qmd              # Trial protocol
-│   ├── measures.qmd            # Outcome measures rationale
-│   └── analysis-plan.qmd      # Pre-specified statistical approach
-└── _site/                      # Local Quarto render output, ignored by git
-```
 
-## Rendering the Site
+Raw observations, filtered coordinates, events, features, and interpretations are
+separate layers. See the [architecture overview](docs/architecture/overview.md).
+
+## Installation
+
+Python 3.11 or newer is recommended for repository development:
 
 ```bash
-quarto render
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -e '.[dev]'
+open-swing status
+pytest
 ```
 
-## GitHub Actions
+No computer-vision runtime dependency is installed yet because V0.1 has not begun.
+The benchmark packages require separate environments; their exact commands are in
+the [benchmark reproduction guide](docs/research/benchmarks/golf-balance-benchmark-readme.md).
 
-This repository includes a GitHub Actions workflow at `.github/workflows/quarto-pages.yml`.
-On every push to `main`, the workflow will:
+## Benchmark notebooks
 
-- install Quarto
-- render the site into `_site/`
-- deploy the generated site with GitHub Pages
+Executed notebooks are under [`notebooks/benchmarks`](notebooks/benchmarks). Their
+saved outputs can be reviewed without installing the third-party projects. Large
+source videos, pickles, environments, checkpoints, and generated videos are not
+versioned.
 
-## GitHub Pages setup
+To rebuild the notebook sources after creating the documented benchmark environment:
 
-After you push this repository to GitHub, enable Pages from:
+```bash
+python scripts/build_notebooks.py
+python scripts/build_repository_notebooks.py
+```
 
-1. `Settings` → `Pages`
-2. `Source` → `GitHub Actions`
+Rebuilding clears saved execution output; only do it when intentionally updating the
+benchmark. Data provenance and download hashes are under [`data/manifests`](data/manifests).
 
-If your branch is not `main`, update the workflow branch name accordingly.
+## Development roadmap
 
-## Status
+- **V0.1 — Movement measurement:** ingestion, MediaPipe landmarks, continuous
+  storage, validated event baselines, overlays, and diagnostics.
+- **V0.2 — Personal consistency:** phase alignment, normalized trajectories,
+  personal baselines, variability, anomalies, and manual outcome labels.
+- **V0.3 — Club tracking:** evaluate golf-specific models, retain confidence and
+  provenance, and support manual correction.
+- **V0.4 — Advanced analysis:** outcome association, statistical modelling,
+  reference comparisons, and evidence-based explanations.
 
-- [x] Repo structure
-- [ ] Literature review — in progress
-- [ ] Experiment design — draft complete, awaiting literature review input
-- [ ] Ethics consideration
-- [ ] Data collection
+Each stage has validation gates and acceptance criteria in the
+[development roadmap](docs/development/roadmap.md).
 
-## Collaborators
+## Limitations
 
-- Golf instructor (expert consultant)
-- Data analysis: T. Simm
+- Ordinary monocular video does not directly measure 3-D biomechanics, force,
+  pressure, or true club/ball state.
+- Existing event algorithms are heuristic and not yet validated for this project.
+- Pose confidence and camera suitability must be retained; missing observations must
+  not be silently interpolated into false precision.
+- The repository contains research evidence, not medical, injury-prevention, or
+  automated coaching advice.
+
+## Provenance and licence
+
+The migration preserves the original `golf-balance` Git commits as ancestry and
+records the working-tree migration in
+[`docs/development/migration.md`](docs/development/migration.md). Third-party code,
+data, and model licensing remains governed by their respective projects and is
+documented in the benchmark reports.
+
+Open Swing Analysis's own source and documentation are licensed under the MIT
+License. See [LICENSE](LICENSE).

@@ -1,0 +1,97 @@
+---
+title: "Analysis Plan"
+---
+
+::: {.callout-warning}
+This plan is pre-specified — it should be locked before data collection begins
+to avoid post-hoc analysis choices. Items marked **[TO RESOLVE]** need
+finalising once measurement tools are confirmed.
+:::
+
+## Principles
+
+- Pre-specify all analyses before data collection
+- Report all outcomes including null results
+- Express uncertainty honestly — this is preliminary data, not a trial
+- Focus on effect sizes and confidence intervals, not p-values alone
+- Individual participant plots alongside group summaries — given small n,
+  individual variation is as informative as group means
+
+---
+
+## Primary Analysis: COP Timing Change T0 to T2
+
+**Measure**: Frame offset of COP transition from trail to lead, relative to
+top of backswing. Averaged across 10 swings per session.
+
+**Analysis**: Paired comparison T0 vs T2 per participant.
+Report: Mean change (frames / ms), 95% CI, Cohen's d effect size.
+
+**Visualisation**: Individual participant trajectories T0→T1→T2, plus
+group mean with error bars.
+
+**Threshold for "interesting"**: A mean shift of **[TO RESOLVE from
+literature — what is a meaningful COP timing difference between skill groups?]**
+would be considered worth reporting to Loughborough.
+
+---
+
+## Primary Analysis: COP Magnitude Change
+
+**Measure**: Peak lead foot force as % body weight at impact, averaged across
+10 swings.
+
+**Analysis**: Same approach as timing above.
+
+---
+
+## Secondary Analysis: Ball Direction Consistency
+
+**Measure**: SD of launch direction across 10 shots per session.
+
+**Analysis**: Compare SD at T0 vs T2. Smaller SD = more consistent.
+
+---
+
+## Variability Analysis
+
+**Rationale**: With small n, we must characterise within-participant
+variability to interpret between-timepoint changes honestly.
+
+**Analysis**:
+- Coefficient of variation (CV) for each measure at T0 — is the baseline
+  stable enough to detect change?
+- If CV at T0 is high relative to expected effect size, conclude measurement
+  approach is insufficient for this question
+
+---
+
+## Individual Case Analyses
+
+Given n=8-12, group means may obscure meaningful individual responses.
+For each participant, plot their measure across all timepoints and note:
+
+- Clear improvement
+- No change
+- Deterioration
+- High variability (unclear)
+
+This is more informative for a feasibility study than a single group mean.
+
+---
+
+## What We Will NOT Claim
+
+- Causal attribution to the device (no control group)
+- Generalisability beyond this sample
+- Statistical significance as the primary criterion for "success"
+- That negative results mean the device does not work — only that this
+  measurement approach in this sample did not detect an effect
+
+---
+
+## Software
+
+- Python (pandas, scipy, matplotlib) — consistent with existing project tooling
+- All analysis code in `/analysis/` folder, reproducible
+- Data in `/data/` folder, anonymised (participant IDs only)

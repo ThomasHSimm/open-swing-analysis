@@ -1,0 +1,13 @@
+{
+  "environment": "envs/swing-analyzer",
+  "python": "3.11",
+  "opencv": "5.0.0",
+  "result": "325 passed, 21 failed",
+  "passed": 325,
+  "failed": 21,
+  "failure_groups": {
+    "club_detector_opencv_5_hough_shape": 7,
+    "pose_and_integration_mediapipe_placeholder": 14
+  },
+  "interpretation": "The suite is substantial, but the checked-out implementation neither completes MediaPipe integration nor supports OpenCV 5 HoughLinesP output shape. OpenCV 4.11 was used only for the separate club component probe."
+}

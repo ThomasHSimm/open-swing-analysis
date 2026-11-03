@@ -1,8 +1,49 @@
-# Ignore temporary experiment working files and local exports
+# Python and local environments
+.venv/
+venv/
+envs/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
 
-experiment/
-golf-balance-research*/
-/.quarto/
-/_site/
-/docs/
+# Notebook and editor state
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+
+# Raw/processed local data. Keep only explanatory README files and manifests.
+data/raw/**
+!data/raw/README.md
+data/processed/**
+!data/processed/README.md
+
+# Model weights, serialized Python data, and private/local recordings
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.pkl
+*.pickle
+recordings/
+private/
+
+# Generated media and transient benchmark products
+outputs/**/*.mp4
+outputs/**/*.mov
+outputs/**/*.avi
+outputs/**/*.mkv
+
+# Local site/render products
+_site/
+.quarto/
 **/*.quarto_ipynb
+
+# Runtime/tool caches
+.cache/
+*.log

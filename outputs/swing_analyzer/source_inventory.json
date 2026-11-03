@@ -1,0 +1,451 @@
+{
+  "swing-analyzer": {
+    "distribution": "swing-analyzer",
+    "version": "0.1.2",
+    "python_requires": "<3.13,>=3.9",
+    "requirements": [
+      "mediapipe==0.10.14",
+      "opencv-python",
+      "numpy",
+      "scipy"
+    ],
+    "metadata_license": "MIT",
+    "import_name": "swing_analyzer",
+    "import_file": "/home/tsispace/Documents/GitHub/golf-balance/envs/swing-analyzer/lib/python3.11/site-packages/swing_analyzer/__init__.py",
+    "package_files": [
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/swing-analyzer/lib/python3.11/site-packages/swing_analyzer/__init__.py",
+        "lines": 0,
+        "definitions": []
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/swing-analyzer/lib/python3.11/site-packages/swing_analyzer/analyze.py",
+        "lines": 1338,
+        "definitions": [
+          {
+            "kind": "FunctionDef",
+            "name": "_smooth_points",
+            "line": 137
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "face_box",
+            "line": 152
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "apply_mosaic",
+            "line": 171
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "analyze_video",
+            "line": 183
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "detect_phases",
+            "line": 431
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_angle_change",
+            "line": 525
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_undirected_change",
+            "line": 533
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_pair_separation",
+            "line": 550
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_separation_frac",
+            "line": 559
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_joint_angle",
+            "line": 579
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_turn_metric",
+            "line": 593
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "summarize_metrics",
+            "line": 609
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "flag_issues",
+            "line": 692
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "downswing_seconds",
+            "line": 736
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "is_slow_motion",
+            "line": 752
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "slowed_fps_for_target",
+            "line": 758
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "retime_video",
+            "line": 777
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "body_framing",
+            "line": 806
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "framing_crop",
+            "line": 827
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "reframe_video",
+            "line": 854
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "match_framing",
+            "line": 900
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "apply_slow_motion",
+            "line": 930
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_read_frames",
+            "line": 974
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_resample",
+            "line": 986
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_swing_segments",
+            "line": 996
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_patch_chunk_offsets",
+            "line": 1024
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_normalize_display_matrix",
+            "line": 1061
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_faststart_mp4",
+            "line": 1101
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "make_side_by_side",
+            "line": 1139
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "write_report",
+            "line": 1231
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "build_parser",
+            "line": 1265
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "run_from_args",
+            "line": 1276
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "main",
+            "line": 1330
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/swing-analyzer/lib/python3.11/site-packages/swing_analyzer/cli.py",
+        "lines": 43,
+        "definitions": [
+          {
+            "kind": "FunctionDef",
+            "name": "main",
+            "line": 14
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/swing-analyzer/lib/python3.11/site-packages/swing_analyzer/compare.py",
+        "lines": 196,
+        "definitions": [
+          {
+            "kind": "FunctionDef",
+            "name": "_source_dims",
+            "line": 30
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_bake_specs",
+            "line": 38
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "compare",
+            "line": 57
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "write_compare_report",
+            "line": 123
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "build_parser",
+            "line": 156
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "run_from_args",
+            "line": 174
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "main",
+            "line": 188
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/swing-analyzer/lib/python3.11/site-packages/swing_analyzer/core.py",
+        "lines": 163,
+        "definitions": [
+          {
+            "kind": "ClassDef",
+            "name": "FrameMetrics",
+            "line": 43
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "get_pixel",
+            "line": 54
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "angle_from_vertical",
+            "line": 58
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "line_angle",
+            "line": 66
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "draw_dot",
+            "line": 73
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "draw_line",
+            "line": 78
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "text_strokes",
+            "line": 82
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "draw_angle_triangle",
+            "line": 94
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "draw_swing_plane_line",
+            "line": 121
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "color_for_deviation",
+            "line": 138
+          },
+          {
+            "kind": "ClassDef",
+            "name": "PoseTracker",
+            "line": 149
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/swing-analyzer/lib/python3.11/site-packages/swing_analyzer/full.py",
+        "lines": 634,
+        "definitions": [
+          {
+            "kind": "FunctionDef",
+            "name": "_severity",
+            "line": 55
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "assess",
+            "line": 63
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "combine_views",
+            "line": 415
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_tempo",
+            "line": 437
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "write_analysis",
+            "line": 453
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "run",
+            "line": 551
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "build_parser",
+            "line": 607
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "run_from_args",
+            "line": 617
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "main",
+            "line": 626
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/swing-analyzer/lib/python3.11/site-packages/swing_analyzer/report_html.py",
+        "lines": 596,
+        "definitions": [
+          {
+            "kind": "FunctionDef",
+            "name": "_frames",
+            "line": 74
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_photo",
+            "line": 88
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_head",
+            "line": 108
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_golfer",
+            "line": 116
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_head_front",
+            "line": 169
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_golfer_front",
+            "line": 176
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_svg",
+            "line": 223
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_svg2",
+            "line": 228
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_default_fig",
+            "line": 239
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_esc",
+            "line": 467
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_phase_photo",
+            "line": 471
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "build_html_report",
+            "line": 480
+          }
+        ]
+      },
+      {
+        "path": "/home/tsispace/Documents/GitHub/golf-balance/envs/swing-analyzer/lib/python3.11/site-packages/swing_analyzer/scroll_html.py",
+        "lines": 380,
+        "definitions": [
+          {
+            "kind": "FunctionDef",
+            "name": "_video_data_uri",
+            "line": 24
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "_fault_card",
+            "line": 29
+          },
+          {
+            "kind": "FunctionDef",
+            "name": "build_scroll_report",
+            "line": 130
+          }
+        ]
+      }
+    ],
+    "console_scripts": [
+      {
+        "name": "swing",
+        "value": "swing_analyzer.cli:main"
+      }
+    ]
+  }
+}

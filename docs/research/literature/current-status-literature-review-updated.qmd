@@ -1,0 +1,328 @@
+---
+title: "Current Status Literature Review"
+subtitle: "Balance-focused training, golf swing weight transfer, and CoP timing"
+date: last-modified
+format:
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## Purpose of this review
+
+This page summarises the current literature position for the proposed pilot study of
+balance-focused training applied to golf swing weight transfer.
+
+The proposed study is not yet a definitive efficacy trial. Based on the current
+literature, the strongest defensible framing is:
+
+> A feasibility and mechanism pilot testing whether balance-focused training can produce
+> a detectable and reliable change in centre-of-pressure or ground-reaction-force timing
+> during the golf swing.
+
+That is narrower than saying the training improves golf performance. The performance
+claim is not yet well supported.
+
+## Current evidence base
+
+The current extraction set contains **17 paper/thesis extractions** plus one short
+measurement-layer synthesis. The evidence base is useful, but uneven. It is strongest for
+measurement concepts and weakest for the load-bearing causal claim.
+
+| Evidence area | Current status | Main implication |
+|---|---|---|
+| Golf GRF/CoP measurement | Moderate to strong observational evidence | CoP and GRF timing are reasonable swing-mechanics outcomes |
+| Balance/proprioceptive training | Moderate evidence in sport generally; one golf-specific 4-week study | Balance training can improve static balance and some performance measures, but transfer to swing CoP is unproven |
+| CoP/GRF timing and skill | Reasonable cross-sectional support | Timing and unweighting are better candidates than simple magnitude |
+| CoP/GRF intervention studies in golf | Very limited | No current paper cleanly tests balance training -> swing CoP change |
+| Launch monitor reliability | Good for TrackMan CHS, ball speed, carry/distance | Suitable as secondary outcomes only |
+| CoP timing reliability | Missing | Must be measured in the pilot or sourced for chosen hardware |
+
+## Included extractions and current role
+
+| Extraction | Paper / source | Current role in review | Weight |
+|---|---|---|---|
+| `li_2024.md` | Li et al. 2024, 4-week TOGU golf training | Closest golf-specific training precedent | Core |
+| `watson_2026.md` | Watson et al. 2026, GRF/CoP systematic review | Main map of golf GRF/CoP literature | Core |
+| `faux_2019.md` | Faux et al. 2019, foot CoP cue/intervention | Closest methodological intervention precedent | Core |
+| `belotti_2024.md` | Ground-X-Factor preprint | Recent acute proprioceptive/foot cue study | Caution: preprint |
+| `yilmaz_2024.md` | Proprioceptive training systematic review | General training-duration context | Core background |
+| `smith_2016_cop_cog_golf.md` | Smith et al. 2016, COG/COP patterns | Key warning that COP, COG, and “weight transfer” differ | Core |
+| `ball_2006.md` | Ball 2006 PhD thesis | Strongest source on weight-transfer styles and individual analysis | Core |
+| `ball_2002.md` | Ball, Best, Dowlan & Brown 2002 | Earlier style-identification / CoP precedent | Useful, overlaps Ball 2006 |
+| `mchugh_2024.md` | McHugh et al. 2024, proficiency metrics | Supports timing/unweighting over simple magnitude | Core |
+| `severin_2021.md` | Severin et al. 2021, trial-count reliability | Supports collecting enough swings; does not solve CoP timing reliability | Core methods |
+| `yang_2024.md` | Yang et al. 2024, shaft weight and COG displacement | Useful COG/weight-transfer measurement precedent; not training | Secondary |
+| `bishop_2024.md` | Bishop et al. 2024, TrackMan reliability | Secondary ball-flight measurement reliability | Measurement layer |
+| `shaw_2023.md` | Shaw et al. 2023, TrackMan reliability | Secondary ball-flight measurement reliability | Measurement layer |
+| `brennan_2023.md` | Brennan et al. 2023, Mevo+ validity/reliability | Device-choice evidence if Mevo+ is used | Measurement layer |
+| `brennan_2024.md` | Brennan et al. 2024, physical characteristics and CHS | Context on physical tests and CHS; not CoP mechanism | Background only |
+| `barzyk_2024.md` | Barzyk & Gruber 2024, motor learning in golf | Cueing / attentional-focus confound | Background only |
+| `you_2023.md` | You et al. 2023, GRF club-type meta-analysis | Lower-quality GRF magnitude context | Low priority |
+| `measurement-layer-synthesis.md` | Launch-monitor measurement synthesis | Keeps secondary ball-flight evidence separate | Keep as synthesis |
+
+The important point is that not every extraction should carry equal weight. The core design
+evidence comes from Li, Watson, Faux, Yilmaz, Smith, Ball, McHugh, and Severin. The launch-monitor
+papers are useful, but only for secondary outcomes.
+
+## Main finding
+
+The literature supports measuring swing CoP/GRF timing, but it does not yet support a
+strong claim that balance training will change that timing.
+
+This is the central gap. Existing papers split into two separate arms:
+
+1. **Training papers**: balance or proprioceptive training improves static balance,
+   functional movement, or some sport-performance measures, but these studies do not
+   measure CoP timing during the golf swing.
+2. **Golf swing mechanics papers**: CoP, COG, GRF timing, and weight-transfer patterns
+   can be measured during the swing, and some timing measures differ by skill or relate
+   to clubhead speed, but these studies are mostly cross-sectional or acute cueing
+   studies rather than controlled training trials.
+
+The pilot is therefore valuable because it connects those two arms.
+
+## What the literature supports
+
+### 1. CoP timing is a better primary outcome than simple weight-transfer magnitude
+
+Several papers point in the same direction: timing, rate of change, and unweighting are
+more informative than a single value such as percentage pressure on the lead foot at
+impact.
+
+Smith et al. show that COP movement varies by magnitude, timing, and rate of change, and
+that COP and COG should not be treated as the same thing. Earlier COP movement towards
+the lead foot related to higher clubhead velocity, while earlier COG movement towards the
+lead foot related to lower clubhead velocity. That is a direct warning against loose use
+of the phrase "weight transfer".
+
+McHugh et al. strengthen this point: GRF magnitude alone did not discriminate skill well,
+whereas timing and lead-foot unweighting were more useful. This supports a primary
+outcome based on timing or waveform behaviour rather than only peak force.
+
+Ball 2006 also supports this direction: it uses eight swing events, CP range, CP velocity,
+style classification, and individual analysis. It is a warning against reducing the swing
+to a single impact number.
+
+**Design consequence:** retain CoP/GRF timing as the primary mechanism outcome. Treat
+magnitude as secondary or exploratory unless the chosen hardware gives a very reliable
+magnitude measure.
+
+### 2. There is no single "correct" weight-transfer pattern
+
+Ball identifies different weight-transfer styles. The important point for this project is
+not the exact taxonomy, but the warning: different styles can be effective, and pooling
+golfers without accounting for baseline style can create misleading results.
+
+This matters because a training intervention aimed at moving everyone towards a single
+front-foot pattern may be conceptually wrong. Some golfers may already use a different
+but functional strategy.
+
+**Design consequence:** do not define success as "more lead-foot pressure" or "more
+forward transfer" without qualification. Better candidate outcomes are:
+
+- improved within-golfer consistency,
+- earlier or better-timed transition within the golfer's own pattern,
+- change in lead-foot unweighting/reweighting rate,
+- reduced excessive late shift, if defined before analysis.
+
+### 3. A 4-week intervention is plausible but not strongly established
+
+Li et al. provide the closest golf-specific training precedent: a 4-week TOGU programme
+improved static balance and some swing-performance measures. However, it did not measure
+swing CoP, and the extra training volume in the intervention group is a serious confound.
+
+Yilmaz et al. show that broader proprioceptive-training studies more commonly run for
+6-20 weeks, often around 8-12 weeks. That makes a 4-week golf trial feasible, but short.
+
+**Design consequence:** either:
+
+- use 4 weeks and explicitly frame it as a short feasibility test, or
+- use 6-8 weeks if the aim is to give the intervention a fairer chance of changing a
+  dynamic swing outcome.
+
+A 4-week null result should not be written as evidence that the training cannot work.
+It may only show that the dose was too small, the outcome too noisy, or the mechanism
+not detectable in that sample.
+
+### 4. Launch monitor outcomes are useful but should stay secondary
+
+The TrackMan/Mevo literature supports clubhead speed, ball speed, and carry/distance as
+more reliable launch-monitor outcomes than spin, dynamic loft, or angular metrics. These
+are useful secondary measures.
+
+But the review should not imply that the pilot is powered to improve performance. The
+best current rationale is mechanical/feasibility, not performance enhancement.
+
+**Design consequence:** include CHS, ball speed, and carry/distance if a reliable launch
+monitor is available. Do not make them the primary endpoint.
+
+## What is missing
+
+### 1. Test-retest reliability for swing CoP timing
+
+This is the biggest practical gap. Without reliability, a pre/post change may simply be
+measurement noise. Severin et al. support collecting roughly 7-8 usable swings for some
+golf biomechanics variables, but they did not validate CoP timing. Launch-monitor
+reliability papers do not solve this.
+
+**Needed next:** choose the hardware first, then either find a matching reliability paper
+or build a same-week test-retest session into the protocol.
+
+Minimum reliability outputs should include:
+
+- within-session variability,
+- between-session SEM,
+- minimal detectable change (MDC),
+- individual plots showing whether each golfer's apparent change exceeds their own noise
+  band.
+
+### 2. Effect size or MCID for dynamic swing CoP timing
+
+There is no usable effect-size anchor for a within-subject training change in swing CoP
+timing. Cross-sectional skill differences are not training effects. Static balance
+changes are not swing-CoP changes. Ball-flight effects are not mechanism effects.
+
+**Needed next:** do not power the pilot around a guessed CoP effect. Treat the pilot as a
+variability-estimation study that will inform a later sample-size calculation.
+
+### 3. Direct evidence that balance training changes swing CoP
+
+This is the load-bearing gap. Li and Yilmaz support balance/proprioceptive training, but
+not swing CoP. Faux and Belotti manipulate foot pressure or proprioceptive cues during
+swing tasks, but they do not provide a controlled multi-week balance-training trial.
+
+**Needed next:** state the causal chain explicitly as the hypothesis:
+
+> balance-focused training -> altered dynamic CoP timing/consistency -> potentially altered
+> ball-striking outcomes.
+
+Only the first arrow should be treated as the pilot's main test.
+
+### 4. Hardware-specific evidence
+
+The design cannot be finalised until the measurement system is known.
+
+| Hardware option | Consequence |
+|---|---|
+| TrackMan / GCQuad only | Cannot answer the primary CoP question; becomes a ball-flight pilot |
+| Smart2Move / vertical-force system | Useful for vGRF timing; may not fully capture CoP trajectory or shear |
+| Dual force plates | Strongest lab option; lower feasibility |
+| Pressure insoles | Portable and directly relevant, but reliability/validity must be checked |
+| Video only | Feasible, but too indirect for a CoP claim |
+
+**Needed next:** decide whether the project is truly a CoP/GRF study or a pragmatic
+video/ball-flight study. Those are different studies.
+
+### 5. Missing papers to acquire
+
+Priority acquisition targets are now narrower:
+
+1. **Peterson et al. 2016/2019** — angular impulse and balance regulation in golf; likely
+   useful for impulse/rate outcomes.
+2. **Queen et al. 2013** — handicap and weight-transfer timing.
+3. **Richards et al. 1985** — older historical weight-transfer precedent.
+4. **Hardware-specific reliability paper** — choose after selecting force plates/insoles.
+5. **Villarrasa-Sapina 2022** — only needed if Mevo+ is used for secondary ball-flight
+   outcomes.
+
+Already covered strongly enough for now:
+
+- Smith et al. 2016/2017 CoP/COG golf paper.
+- Ball 2006 / Ball 2002 weight-transfer style work.
+- Launch-monitor reliability as a secondary measurement layer.
+- General motor-learning background.
+
+Avoid spending much more time on generic launch-monitor reliability or broad motor-learning
+reviews. Those layers are already saturated enough for the current design.
+
+## Implications for the current protocol
+
+### Design
+
+The current design should be revised from a simple pre/post intervention into a pilot with
+three purposes:
+
+1. estimate reliability of the chosen CoP/GRF outcome,
+2. estimate the size and direction of any pre/post change,
+3. test whether data collection is feasible with the instructor, participants, and hardware.
+
+A small waitlist or active-control group would improve the design substantially. If there is no
+control group, the language should stay firmly at feasibility/mechanism level.
+
+### Participants
+
+Intermediate golfers, roughly handicap 10-20, remain a sensible target. They should have enough
+skill for repeatable swings but enough room for adaptation. Restricting to right-handed golfers
+is reasonable for the pilot unless sample size is large enough to model handedness.
+
+Baseline style should be recorded before the intervention. Do not assume all golfers should move
+in the same direction.
+
+### Intervention duration
+
+The current 4-6 week placeholder should be resolved as follows:
+
+- **4 weeks**: feasible and aligned with Li et al., but short and higher risk of a null result.
+- **6 weeks**: reasonable compromise.
+- **8 weeks**: better aligned with broader proprioceptive-training literature, but higher burden.
+
+For a small instructor-led pilot, 6 weeks is probably the best compromise unless participant
+burden is the overriding constraint.
+
+### Outcome hierarchy
+
+Recommended hierarchy:
+
+1. **Primary feasibility outcome:** reliability and completeness of CoP/GRF timing data.
+2. **Primary exploratory mechanism outcome:** change in CoP/GRF timing or unweighting/reweighting
+   rate from baseline to post-intervention.
+3. **Secondary mechanical outcome:** magnitude/range of CoP/GRF shift at pre-specified swing phases.
+4. **Secondary performance outcome:** CHS, ball speed, carry/distance, if a reliable launch monitor
+   is available.
+5. **Subjective outcome:** perceived control/stability, kept clearly exploratory.
+
+### Analysis
+
+The analysis should not rely only on paired t-tests of averaged values. The literature favours
+continuous or windowed analysis because the timing of the change matters.
+
+Recommended analysis additions:
+
+- same-week reliability session before intervention,
+- SEM and MDC for each primary metric,
+- individual response plots with MDC bands,
+- baseline style classification or at least baseline-pattern grouping,
+- pre-specified swing windows: transition/early downswing and final downswing,
+- exploratory waveform analysis if the hardware exports time-series data.
+
+## Current bottom line
+
+The project is worth doing, but only if framed honestly.
+
+The strong version is not:
+
+> Balance training improves golf performance by improving weight transfer.
+
+The defensible current version is:
+
+> Existing golf biomechanics work suggests CoP/GRF timing is meaningful, but no study has shown
+> whether balance-focused training can change it. This pilot tests the feasibility, reliability,
+> and preliminary trainability of that mechanism.
+
+That is still a good project. The literature gap is real and specific. The next step is not to keep
+adding general papers. The next step is to lock the hardware, rewrite the protocol around
+reliability/feasibility, and decide whether the intervention runs for 4, 6, or 8 weeks.
+
+## Immediate TODO list
+
+1. **Pick measurement hardware.** This gates the whole design.
+2. **Decide intervention duration.** Recommendation: 6 weeks unless feasibility forces 4.
+3. **Add a same-week reliability session.** Do this before the intervention starts.
+4. **Define primary CoP/GRF timing metric precisely.** Avoid vague "weight transfer" wording.
+5. **Classify or describe baseline transfer style.** Do not train everyone towards one assumed ideal.
+6. **Add a control condition if possible.** Even a waitlist or matched-contact control improves the study.
+7. **Acquire only the missing targeted papers.** Peterson, Queen, Richards, and hardware reliability.
+8. **Update measures.qmd and analysis-plan.qmd.** Make reliability and feasibility explicit primary aims.
+9. **Draft consent/data-handling materials.** Needed before any data collection.
+10. **Pre-register analysis choices internally.** Lock before collection, even if this remains informal.

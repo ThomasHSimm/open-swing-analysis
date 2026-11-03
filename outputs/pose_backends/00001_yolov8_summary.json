@@ -1,0 +1,14 @@
+{
+  "backend": "Ultralytics YOLOv8n-pose, CPU compatibility probe",
+  "ultralytics": "8.4.200",
+  "torch": "2.1.2+cpu",
+  "opencv": "4.8.1",
+  "device": "cpu",
+  "frames": 136,
+  "detected_frames": 136,
+  "landmarks_per_detection": 17,
+  "mean_latency_seconds": 0.05448114750753816,
+  "mean_keypoint_confidence": 0.8422389002049593,
+  "mean_person_box_confidence": 0.9062207025640151,
+  "repository_pin_result": "ultralytics 8.0.20 installed, but its package lacked PoseModel and could not deserialize the official yolov8n-pose.pt; inference used the documented upgraded version above"
+}

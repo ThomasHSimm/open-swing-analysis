@@ -1,0 +1,28 @@
+Feature,swing-analyzer,golftracker,golftrainer
+Role,turnkey body-pose analyzer,video-to-frame-data producer,JSON-to-DataFrame adapter
+Pose model,MediaPipe Pose complexity 1,MediaPipe Pose complexity 1,none; consumes coordinates
+Landmarks retained,selected derived fields only,33 x/y/z/visibility per frame,33 x/y/z/visibility from input
+2D / 3D,2D image geometry; MediaPipe z discarded,normalized x/y plus relative MediaPipe z,passes x/y/z/visibility; tables mainly x/y
+Clubhead tracking,No,Manual points + straight-line interpolation,passes input clubhead points
+Shaft tracking,No; fixed 54°/manual-angle proxy,No; draws thumb-to-clubhead segment,No
+Ball tracking,No,No in v2 schema,No
+Swing events,Automatic wrist-height heuristics,sklearn pose classes or manual labels,passes stored labels; no detector
+Address / finish semantics,first / last tracked frame,classified/labelled Start / Finish,input labels
+Impact semantics,hands-low heuristic,not represented as a pose class,none
+Full frame trajectory,selected fields internally returned,Yes: all pose + club fields,Yes when valid producer JSON loads
+Visibility/confidence,not retained,MediaPipe visibility retained,visibility exposed in mp DataFrame
+Smoothing,3-frame phase; pose/tracer visual EMA/MA,optional path MA/spline utilities; not pipeline,none in wheel
+Angles / geometry,"spine, line turns, arm and proxy checks",geometry utility module; no analysis report,none in wheel
+Tempo,top-to-impact and backswing ratio heuristics,No,No
+Automatic operation,"Mostly, body only",MediaPipe yes; phases/club usually manual,yes only after compatible JSON exists
+Manual labelling,None required,GUI phase and club labels central to usable samples,none; relies on upstream labels
+Multi-swing comparison,summary diff + phase-warped video,No,No
+Structured export,Markdown; frame dict only via Python return,pickle + JSON (schema inconsistent),DataFrames; no writer
+Annotated video,"Yes, but codec can fail silently",draw methods; CLI missing,No
+Reusable Python API,"Yes, simple functions",Importable library; broken workflow CLIs,small importable factory/dataclasses
+CLI,Working,broken: invalid entry point and omitted scripts,broken: omitted scripts
+Dependency status,Python 3.9-3.12; MP 0.10.14,MP 0.8.10 unavailable; protobuf 3.20 pin,minimal pandas/numpy
+Packaging/code quality,moderate; monolithic and unchecked writer,poor wheel/schema/per-frame model lifecycle,poor wheel completeness/schema validation
+Licence verified,MIT file in wheel,MIT file in wheel and source repo,MIT file in wheel and source repo
+Maintenance evidence,PyPI 2026-08-10,PyPI 2023-11-25; repo commit 2024-11-10,PyPI 2024-01-06; repo commit 2024-02-12
+Usefulness here,best executable reference and event baseline,best raw-data/club-label data model concept,useful only as a schema/table cautionary example
