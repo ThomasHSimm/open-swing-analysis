@@ -1,4 +1,4 @@
-"""Command-line entry point for the pre-implementation project scaffold."""
+"""Command-line entry point for Open Swing Analysis."""
 
 from __future__ import annotations
 
@@ -26,8 +26,8 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     if args.command == "status":
         print(
-            "Benchmark and architecture migration complete; "
-            "the V0.1 analysis pipeline is not implemented."
+            "V0.1 data contracts and deterministic video ingestion are implemented; "
+            "pose inference, event detection, and swing analysis are not implemented."
         )
         return 0
     parser.print_help()

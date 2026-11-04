@@ -4,12 +4,17 @@ The stages are provisional gates, not simultaneous feature promises. The benchma
 reports define the evidence base; implementation should advance only when the prior
 stage's data and validation contracts are usable.
 
-## First task: V0.1 contracts and fixtures
+## First task: V0.1 contracts and fixtures — implemented
 
 Before adding a pose dependency, define and test the immutable video/session metadata,
 timestamped frame record, long-form landmark observation, event label/estimate, and
 quality-status schemas. Select a small, redistributable-or-local fixture policy and a
 manual event-label format. This is the recommended next implementation task.
+
+Contract version `0.1.0` now implements these records with Pydantic, PyArrow/Parquet,
+validated JSON metadata, additive corrections, synthetic fixtures, and an executed
+example notebook. Media decoding and pose inference remain outside this completed
+contract slice.
 
 Acceptance criteria:
 
@@ -24,11 +29,16 @@ Acceptance criteria:
 
 Priorities:
 
-1. deterministic video ingestion and capture-quality reporting;
+1. deterministic video ingestion and capture-quality reporting — implemented;
 2. persistent MediaPipe 33-landmark extraction on CPU;
 3. continuous raw storage and separate filtered trajectories;
 4. transparent event baselines plus manual event validation;
 5. annotated video and confidence/missingness diagnostics.
+
+The ingestion slice uses PyAV streaming decode, original PTS/time-base provenance,
+display rotation, hashing, validated frame/capture diagnostics, and synthetic CFR/VFR
+tests. The next planned task is persistent MediaPipe 33-landmark extraction through
+this interface.
 
 Validation gates:
 

@@ -7,10 +7,11 @@ ordinary golf-swing video. Its central question is:
 > identify anomalous movements, and determine which variations are associated
 > with labelled shot outcomes?
 
-The repository is currently at the **benchmark-complete, implementation-not-yet-started**
-stage. It preserves executed evaluations of eight existing golf and movement-analysis
-projects and uses those results to define a cautious architecture. It does not yet
-provide swing measurement, coaching, anomaly detection, or outcome prediction.
+The repository is currently at the **V0.1 video-ingestion implemented** stage. It
+preserves executed evaluations of eight existing golf and movement-analysis projects
+and now provides versioned local storage plus deterministic streaming decode and
+capture diagnostics. It does not yet provide pose inference, swing measurement,
+coaching, anomaly detection, or outcome prediction.
 
 ## Current contents
 
@@ -18,14 +19,19 @@ Implemented repository infrastructure:
 
 - an installable `open_swing_analysis` project scaffold;
 - the `open-swing` status/version command;
+- strict Pydantic contracts and validated JSON metadata;
+- PyArrow/Parquet frame and long-form pose tables with immutable revision layers;
+- deterministic synthetic fixtures and an executed data-contract notebook;
+- PyAV streaming ingestion with original timestamp and rotation provenance;
+- brightness, contrast, blur-proxy and timestamp diagnostic outputs;
 - ten executed benchmark notebooks;
 - benchmark scripts, derived evidence, manifests, and licence notes;
 - architecture and staged-development documentation;
 - research and study-design material migrated from `golf-balance`.
 
 Proposed capabilities—not yet implemented—are video ingestion, 33-landmark pose
-extraction, validated swing events, continuous trajectory storage, personal
-consistency analysis, anomaly detection, outcome association, and club tracking.
+extraction, validated swing-event detection, personal consistency analysis, anomaly
+detection, outcome association, and club tracking.
 
 ## Evidence from the benchmark
 
@@ -66,12 +72,16 @@ Python 3.11 or newer is recommended for repository development:
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
-python -m pip install -e '.[dev]'
+python -m pip install -e '.[dev,analysis]'
 open-swing status
 pytest
 ```
 
-No computer-vision runtime dependency is installed yet because V0.1 has not begun.
+No pose-inference dependency is installed yet. The runtime uses PyAV and NumPy for
+streaming decode/diagnostics plus Pydantic and PyArrow for contracts and storage;
+Jupyter and Matplotlib are optional analysis dependencies. See the
+[data-contract reference](docs/architecture/data-contracts.md) and
+[video-ingestion decision](docs/architecture/video-ingestion.md).
 The benchmark packages require separate environments; their exact commands are in
 the [benchmark reproduction guide](docs/research/benchmarks/golf-balance-benchmark-readme.md).
 

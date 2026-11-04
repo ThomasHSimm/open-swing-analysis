@@ -1,7 +1,8 @@
 # Architecture overview
 
-Status: proposed architecture informed by the completed benchmark. No movement
-measurement pipeline is implemented yet.
+Status: the V0.1 data contracts, deterministic video ingestion, and capture-quality
+diagnostics are implemented. Pose inference, event detection, and movement
+measurement remain proposed.
 
 ## Architectural principles
 
@@ -59,6 +60,10 @@ Records the immutable asset hash, source, subject/session/swing identifiers, FPS
 resolution, timestamps, camera view, handedness, and decode failures. Frame numbers
 alone are insufficient for variable or inaccurate frame rates.
 
+The implemented [video-ingestion layer](video-ingestion.md) uses PyAV to preserve
+original PTS/time-base data, apply display rotation, stream frames, and store
+threshold-free capture diagnostics alongside the versioned contracts.
+
 ### Observation
 
 V0.1 should use one persistent MediaPipe model per video and retain all 33 landmarks,
@@ -93,9 +98,10 @@ proxy into a measurement.
 
 ## Deferred decisions
 
-- The persistent storage engine and formal schemas will be selected during the V0.1
-  contract task; Parquet plus validated metadata JSON is the current benchmark-led
-  preference, not a committed implementation.
+- Contract version `0.1.0` adopts validated JSON metadata plus explicit-schema
+  Parquet frame/pose tables in a session/swing directory layout. See
+  [V0.1 data contracts](data-contracts.md). A database server remains unnecessary;
+  migration and larger-scale partitioning are deferred until evidence requires them.
 - Automatic club/ball tracking is deferred until V0.3 and requires labelled pixel
   error/precision tests.
 - OpenSim/3-D biomechanics is not part of V0.1. It requires calibration, reproducible

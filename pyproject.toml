@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "open-swing-analysis"
-version = "0.0.0"
+version = "0.1.0a2"
 description = "Open-source golf swing video analysis for movement variability and outcome research"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -16,10 +16,16 @@ classifiers = [
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.11",
 ]
-dependencies = []
+dependencies = [
+  "av>=14,<17",
+  "numpy>=1.26",
+  "pydantic>=2.10,<3",
+  "pyarrow>=18",
+]
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]
+analysis = ["ipykernel>=6", "matplotlib>=3.8", "nbclient>=0.10"]
 
 [project.scripts]
 open-swing = "open_swing_analysis.cli:main"
