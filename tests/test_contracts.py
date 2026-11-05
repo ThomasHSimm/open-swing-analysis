@@ -60,10 +60,20 @@ def test_constant_frame_rate_requires_nominal_fps() -> None:
         VideoAsset.model_validate(payload)
 
 
-def test_invalid_normalized_coordinate_is_rejected() -> None:
+def test_non_finite_normalized_coordinate_is_rejected() -> None:
     payload = create_synthetic_dataset().invalid_observation_payloads[0]
-    with pytest.raises(ValidationError, match="less than or equal to 1"):
+    payload["x"] = float("nan")
+    with pytest.raises(ValidationError, match="finite number"):
         PoseObservation.model_validate(payload)
+
+
+def test_out_of_frame_normalized_coordinate_is_preserved() -> None:
+    raw = create_synthetic_dataset().pose_observations["swing-synthetic-001"][0]
+    observation = PoseObservation.model_validate(
+        {**raw.model_dump(mode="python"), "x": 1.08, "y": -0.04}
+    )
+    assert observation.x == pytest.approx(1.08)
+    assert observation.y == pytest.approx(-0.04)
 
 
 def test_missing_observation_uses_null_not_zero() -> None:

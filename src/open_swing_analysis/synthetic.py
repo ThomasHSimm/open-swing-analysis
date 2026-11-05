@@ -316,7 +316,7 @@ def create_synthetic_dataset() -> SyntheticDataset:
     )
     invalid_payload = {
         **pose_observations[swings[0].swing_id][0].model_dump(mode="python"),
-        "x": 1.2,
+        "x": None,
     }
     return SyntheticDataset(
         session=session,

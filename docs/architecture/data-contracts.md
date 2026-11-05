@@ -35,8 +35,9 @@ allocate identifiers once and persist them.
 - `width_px` and `height_px` are pixels. Frame index is zero-based and refers to the
   source asset's decoded-frame sequence.
 - Pose `x` increases from left to right and `y` increases from top to bottom. Both are
-  normalized to the image width/height and validated in `[0, 1]` under
-  `image_normalized_top_left`.
+  finite coordinates normalized to the image width/height under
+  `image_normalized_top_left`. Values outside `[0, 1]` are retained because a pose
+  model can locate a landmark beyond an image boundary; they must not be clipped.
 - `relative_z` is optional model-relative depth. It is allowed only with
   `relative_z_coordinate_system = "model_relative_depth"`. It is not calibrated
   metric 3-D and must not be described as a physical depth measurement.
@@ -45,10 +46,12 @@ allocate identifiers once and persist them.
 - Carry and total distance are optional non-negative values. A present distance must
   declare either `metres` or `yards`; missing distances remain `null`.
 
-Coordinates outside the supported normalized image domain are rejected. A backend
-that returns an unusable row records `observation_status = "invalid"` with null
-coordinates, preserving the failure without inventing a boundary value. Missing
-values are always null, never zero.
+Non-finite or structurally incomplete coordinates are rejected. A backend that
+returns an unusable row records `observation_status = "invalid"` with null
+coordinates, preserving the failure without inventing or clipping a value. Missing
+values are always null, never zero. Widening finite normalized x/y to retain
+out-of-frame values is a backward-compatible validation correction: existing stored
+rows and the `0.1.0` Arrow shape are unchanged.
 
 ## Status and provenance
 
@@ -91,6 +94,10 @@ clip. Uncertainty intervals use seconds and must contain the event timestamp.
         │   ├── raw/<revision>.parquet
         │   ├── filtered/<revision>.parquet
         │   └── corrected/<revision>.parquet
+        ├── diagnostics/pose/<revision>/
+        │   ├── frames.parquet
+        │   ├── summary.json
+        │   └── trajectories.png
         ├── annotations/events/<annotation_id>.json
         └── outcomes/<outcome_id>.json
 ```
@@ -140,12 +147,13 @@ rows = store.read_pose_observations(
 
 The executed [data-contract notebook](../../notebooks/analysis/01_data_contracts.ipynb)
 shows the complete synthetic round trip, trajectory display, and additive manual
-event correction.
+event correction. The [pose reference](mediapipe-pose.md) documents how model output
+populates the existing rows without introducing a competing schema.
 
 ## Current limitations
 
 - Only local filesystem storage and contract version `0.1.0` are supported.
-- Coordinate validation currently targets normalized 2-D image landmarks plus an
+- Coordinate validation currently targets finite normalized 2-D image landmarks plus an
   optional model-relative depth value; calibrated world coordinates need a separate
   future contract.
 - The store requires strictly increasing timestamps within a swing. It preserves
