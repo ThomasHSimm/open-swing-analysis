@@ -27,7 +27,8 @@ def main(argv: list[str] | None = None) -> int:
     if args.command == "status":
         print(
             "V0.1 data contracts and deterministic video ingestion are implemented; "
-            "pose inference, event detection, and swing analysis are not implemented."
+            "persistent MediaPipe pose extraction is implemented; event detection "
+            "and swing analysis are not implemented."
         )
         return 0
     parser.print_help()

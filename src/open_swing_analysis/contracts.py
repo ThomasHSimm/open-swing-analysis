@@ -30,6 +30,9 @@ Identifier = Annotated[
 NonEmptyString = Annotated[str, StringConstraints(strip_whitespace=True, min_length=1)]
 Sha256 = Annotated[str, StringConstraints(pattern=r"^[0-9a-f]{64}$")]
 Probability = Annotated[float, Field(ge=0.0, le=1.0)]
+# Normalized image coordinates are not probabilities: pose models can return
+# values outside the image when a landmark is just beyond a frame boundary.
+NormalizedImageCoordinate = float
 
 
 class CameraView(str, Enum):
@@ -199,8 +202,8 @@ class PoseObservation(ContractModel):
     timestamp_s: Annotated[float, Field(ge=0)]
     landmark_name: NonEmptyString
     landmark_index: Annotated[int, Field(ge=0)]
-    x: Probability | None
-    y: Probability | None
+    x: NormalizedImageCoordinate | None
+    y: NormalizedImageCoordinate | None
     relative_z: float | None = None
     visibility: Probability | None = None
     confidence: Probability | None = None

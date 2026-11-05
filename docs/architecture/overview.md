@@ -1,8 +1,8 @@
 # Architecture overview
 
-Status: the V0.1 data contracts, deterministic video ingestion, and capture-quality
-diagnostics are implemented. Pose inference, event detection, and movement
-measurement remain proposed.
+Status: the V0.1 data contracts, deterministic video ingestion, capture-quality
+diagnostics, and persistent MediaPipe pose extraction are implemented. Event
+detection and derived movement analysis remain proposed.
 
 ## Architectural principles
 
@@ -66,9 +66,11 @@ threshold-free capture diagnostics alongside the versioned contracts.
 
 ### Observation
 
-V0.1 should use one persistent MediaPipe model per video and retain all 33 landmarks,
-including z and visibility. An observation is a model estimate, not a physical 3-D
-measurement. Equipment observations use separate schemas and can be absent.
+The implemented [MediaPipe pose layer](mediapipe-pose.md) uses one persistent Tasks
+Pose Landmarker per video and retains all 33 landmarks, including model-relative z,
+visibility, and presence confidence. It emits explicit null rows when a pose or
+landmark is absent. An observation is a model estimate, not a physical 3-D
+measurement. Equipment observations use separate future schemas and can be absent.
 
 ### Temporal processing
 

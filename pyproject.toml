@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "open-swing-analysis"
-version = "0.1.0a2"
+version = "0.1.0a3"
 description = "Open-source golf swing video analysis for movement variability and outcome research"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -18,7 +18,9 @@ classifiers = [
 ]
 dependencies = [
   "av>=14,<17",
+  "mediapipe>=1.2,<2",
   "numpy>=1.26",
+  "pillow>=10",
   "pydantic>=2.10,<3",
   "pyarrow>=18",
 ]
@@ -39,3 +41,4 @@ where = ["src"]
 [tool.pytest.ini_options]
 addopts = "-q"
 testpaths = ["tests"]
+markers = ["integration: exercises optional local model and real-video assets"]

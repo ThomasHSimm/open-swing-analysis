@@ -7,11 +7,12 @@ ordinary golf-swing video. Its central question is:
 > identify anomalous movements, and determine which variations are associated
 > with labelled shot outcomes?
 
-The repository is currently at the **V0.1 video-ingestion implemented** stage. It
+The repository is currently at the **V0.1 raw pose extraction implemented** stage. It
 preserves executed evaluations of eight existing golf and movement-analysis projects
-and now provides versioned local storage plus deterministic streaming decode and
-capture diagnostics. It does not yet provide pose inference, swing measurement,
-coaching, anomaly detection, or outcome prediction.
+and now provides versioned local storage, deterministic streaming decode/capture
+diagnostics, and persistent 33-landmark MediaPipe extraction. It does not yet provide
+event detection, derived swing metrics, coaching, anomaly detection, or outcome
+prediction.
 
 ## Current contents
 
@@ -24,14 +25,16 @@ Implemented repository infrastructure:
 - deterministic synthetic fixtures and an executed data-contract notebook;
 - PyAV streaming ingestion with original timestamp and rotation provenance;
 - brightness, contrast, blur-proxy and timestamp diagnostic outputs;
+- persistent CPU MediaPipe Tasks video inference with raw 33-landmark Parquet output;
+- pose coverage/visibility/timing plots and validated annotated video output;
 - ten executed benchmark notebooks;
 - benchmark scripts, derived evidence, manifests, and licence notes;
 - architecture and staged-development documentation;
 - research and study-design material migrated from `golf-balance`.
 
-Proposed capabilities—not yet implemented—are video ingestion, 33-landmark pose
-extraction, validated swing-event detection, personal consistency analysis, anomaly
-detection, outcome association, and club tracking.
+Proposed capabilities—not yet implemented—are filtered trajectories, validated
+swing-event detection, personal consistency analysis, anomaly detection, outcome
+association, and club tracking.
 
 ## Evidence from the benchmark
 
@@ -77,11 +80,13 @@ open-swing status
 pytest
 ```
 
-No pose-inference dependency is installed yet. The runtime uses PyAV and NumPy for
-streaming decode/diagnostics plus Pydantic and PyArrow for contracts and storage;
-Jupyter and Matplotlib are optional analysis dependencies. See the
+The runtime uses PyAV and NumPy for streaming decode, MediaPipe Tasks for pose,
+Pillow for overlays, and Pydantic/PyArrow for contracts and storage. Model bundles
+remain external local assets and are never committed. Jupyter and Matplotlib are
+optional analysis dependencies. See the
 [data-contract reference](docs/architecture/data-contracts.md) and
-[video-ingestion decision](docs/architecture/video-ingestion.md).
+[video-ingestion decision](docs/architecture/video-ingestion.md), then the
+[MediaPipe pose reference](docs/architecture/mediapipe-pose.md).
 The benchmark packages require separate environments; their exact commands are in
 the [benchmark reproduction guide](docs/research/benchmarks/golf-balance-benchmark-readme.md).
 

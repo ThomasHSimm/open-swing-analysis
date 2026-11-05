@@ -30,15 +30,18 @@ Acceptance criteria:
 Priorities:
 
 1. deterministic video ingestion and capture-quality reporting — implemented;
-2. persistent MediaPipe 33-landmark extraction on CPU;
+2. persistent MediaPipe 33-landmark extraction on CPU — implemented;
 3. continuous raw storage and separate filtered trajectories;
 4. transparent event baselines plus manual event validation;
-5. annotated video and confidence/missingness diagnostics.
+5. annotated video and confidence/missingness diagnostics — implemented for raw pose.
 
 The ingestion slice uses PyAV streaming decode, original PTS/time-base provenance,
 display rotation, hashing, validated frame/capture diagnostics, and synthetic CFR/VFR
-tests. The next planned task is persistent MediaPipe 33-landmark extraction through
-this interface.
+tests. The pose slice uses one persistent MediaPipe Tasks video model, immutable raw
+33-landmark Parquet revisions, missingness/visibility/timing diagnostics, and
+validated annotated video. The next task is a separate time-aware filtered-trajectory
+revision; event inference remains deferred until raw and filtered traces can be
+compared without mutation.
 
 Validation gates:
 
